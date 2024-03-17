@@ -1,0 +1,265 @@
+\documentclass[11pt,a4paper,notitlepage]{article}
+
+\usepackage[a4paper,margin=1cm]{geometry}
+\usepackage{multicol}
+\usepackage{tabularx}
+\usepackage[framemethod=TikZ]{mdframed}
+\usepackage{xcolor}
+
+\newcommand{\underItem}[3]{
+\begin{minipage}{#3}
+\vspace{.5cm}\underline{\hspace{#3}}\hspace{-#3}#2\\
+\tiny #1
+\end{minipage}
+}
+
+\newcommand{\addAttribute}[4]{ 
+\begin {minipage}{\linewidth}
+  \begin{mdframed}[roundcorner=10pt,innertopmargin=0cm,innerbottommargin=0cm,innerleftmargin=0cm]
+    \begin{minipage}{.3\linewidth}
+      \begin{mdframed}[roundcorner=10pt,innertopmargin=.2cm, innerbottommargin=.2cm, innerleftmargin=.2cm]
+      \centering
+      #3\\ \huge #2 \\ \tiny #1
+     \end{mdframed}
+    \end{minipage}
+    \begin{minipage}{.65\linewidth}\small
+      \begin{tabular}{ccl}
+        #4
+      \end{tabular}
+    \end{minipage}
+  \end{mdframed}
+  \end {minipage}
+  \vspace{.1cm}
+  \linebreak
+}
+
+\newcommand{\blockWithValue}[2]{
+\begin{minipage}{\linewidth}
+  \begin{mdframed}[roundcorner=10pt,innertopmargin=0cm,innerbottommargin=0cm,innerleftmargin=0cm]
+    \begin{minipage}{.3\linewidth}
+      \begin{mdframed}[roundcorner=10pt,innertopmargin=.2cm,innerbottommargin=.2cm,innerleftmargin=.2cm]
+        \Large #2
+      \end{mdframed}
+    \end{minipage}
+    \begin{minipage}{.65\linewidth}
+      #1
+    \end{minipage}
+  \end{mdframed}
+\end{minipage}
+\linebreak
+}
+
+\newcommand{\itemBlock}[3]{
+\begin{minipage}{#3}
+  \begin{mdframed}[roundcorner=10pt,innertopmargin=.2cm,innerbottommargin=.2cm,innerleftmargin=.2cm,innerrightmargin=.2cm,leftmargin=0cm,rightmargin=0cm]
+    \begin {center}
+      \huge #2 \\ 
+      \scriptsize #1
+    \end{center}
+  \end{mdframed}
+\end{minipage}
+}
+\begin{document}
+%%%%% Character description %%%%%%%%%%%%
+\begin{minipage}{.4\textwidth}
+\underItem{Name}{\LARGE $name}{5cm}
+\end{minipage}
+\begin{minipage}{.6\textwidth}
+\underItem{Class \& Level}{$profession ($level)}{3cm}
+\underItem{Background}{$background}{3cm}
+\underItem{Player name}{$player}{3cm}\\
+\underItem{Race}{$race}{3cm}
+\underItem{Alignment}{$alignment}{3cm}
+\underItem{Experience Points}{$experience}{3cm}
+\end{minipage}
+%
+\vspace{.5cm}
+\begin{multicols}{3}
+\begin{center}
+\blockWithValue{Proficiency Bonus}{$proficiency}
+\blockWithValue{Inspiration}{+0}
+\addAttribute{Strength}{$attrst}{$attrstb}{
+  $skill11o&$skill11&Saving Throws \\ \cline{2-2}
+  $skill12o&$skill12& Athletics \\ \cline{2-2}
+  }
+\addAttribute{Dexterity}{$attrdx}{$attrdxb}{
+  $skill21o&$skill21&Saving Throws \\ \cline{2-2}
+  $skill22o&$skill22& Acropatics\\ \cline{2-2}
+  $skill23o&$skill23&Sleight of Hand\\ \cline{2-2}
+  $skill24o&$skill24&Stealth\\ \cline{2-2}
+}
+\addAttribute{Constitution}{$attrco}{$attrcob}{
+  $skill31o&$skill31&Saving Throws \\ \cline{2-2}
+}
+\addAttribute{Intelligence}{$attrin}{$attrinb}{
+  $skill41o&$skill41&Saving Throws \\ \cline{2-2}
+  $skill42o&$skill42& Arcana\\ \cline{2-2}
+  $skill43o&$skill43& History\\ \cline{2-2}
+  $skill44o&$skill44& Investigation\\ \cline{2-2}
+  $skill45o&$skill45& Nature\\ \cline{2-2}
+  $skill46o&$skill46& Religion\\ \cline{2-2}
+}
+\addAttribute{Wisdom}{$attrwi}{$attrwib}{
+  $skill51o&$skill51&Saving Throws \\ \cline{2-2}
+  $skill52o&$skill52& Animal Handling\\ \cline{2-2}
+  $skill53o&$skill53& Insight\\ \cline{2-2}
+  $skill54o&$skill54& Medicine\\ \cline{2-2}
+  $skill55o&$skill55& Perception\\ \cline{2-2}
+  $skill56o&$skill56& Survival\\ \cline{2-2}
+}
+\addAttribute{Charisma}{$attrch}{$attrchb}{
+  $skill61o&$skill61&Saving Throws \\ \cline{2-2}
+  $skill62o&$skill62& Deception\\ \cline{2-2}
+  $skill63o&$skill63& Intimidation\\ \cline{2-2}
+  $skill64o&$skill64& Performance\\ \cline{2-2}
+  $skill65o&$skill65& Persuation\\ \cline{2-2}
+}
+\blockWithValue{Passive Perception}{$passiveperception}
+\end{center}
+\columnbreak
+\begin{center}
+% AC, INI, SPEED
+\itemBlock{Armor Class}{$armorclass}{.28\linewidth}
+\itemBlock{Initiative}{$initiative}{.28\linewidth}
+\itemBlock{Speed}{$speed}{.28\linewidth}
+\vspace{.2cm}
+\linebreak
+% HT 
+\begin{minipage}{\linewidth}
+\begin{mdframed}[roundcorner=10pt]
+\small \textcolor{lightgray}{Hit Point Maximum} \textbf{$hits}
+\vspace{2cm}
+\linebreak
+\centering \normalsize Current Hit Points
+\end{mdframed}
+\end{minipage}
+\vspace{.2cm}
+\linebreak
+% temp HT
+\begin{minipage}{\linewidth}
+\begin{mdframed}[roundcorner=10pt]
+\vspace{1.5cm}
+\centering Temporary Hit Points
+\end{mdframed}
+\end{minipage}
+\vspace{.2cm}
+\linebreak
+%Hit dice - DEATH saves
+\begin{minipage}{.49\linewidth}
+\begin{mdframed}[roundcorner=10pt]
+\vspace{.2cm}
+\centering \Huge $hitDice\\
+\vspace{.5cm}
+\centering \normalsize Hit Dice
+\end{mdframed}
+\end{minipage}
+\begin{minipage}{.49\linewidth}
+\begin{mdframed}[roundcorner=10pt]
+\vspace{.5cm}
+\hspace{-1cm}
+\begin{tabularx}{\textwidth}{p{.4\textwidth}ccc}
+\tiny \mbox{Successes}&o&o&o\\
+\tiny Failures&o&o&o\\
+\end{tabularx}
+\centering Death saves
+\end{mdframed}
+\end{minipage}
+\vspace{.2cm}
+\linebreak
+% attacks
+\begin{minipage}{\linewidth}
+\begin{mdframed}[roundcorner=10pt]
+\hspace{-.4cm}
+\begin{tabularx}{\linewidth}{p{.4\textwidth}ccc}
+\tiny\textcolor{gray}{Name}&\tiny\textcolor{gray}{Bonus}&\tiny\textcolor{gray}{Damage}&\tiny\textcolor{gray}{Type}\\
+$weapons\\
+\end{tabularx}
+\end{mdframed}
+\end{minipage}
+\vspace{.2cm}
+\linebreak
+\end{center}
+\columnbreak
+\begin{center}
+%Traits
+\begin{minipage}{\linewidth}
+\begin{mdframed}[roundcorner=10pt]
+\begin{flushleft}
+$personality \\
+\end{flushleft}
+\vspace{1cm}
+\centering \scriptsize Personality Traits
+\end{mdframed}
+\end{minipage}
+\vspace{.2cm}
+\linebreak
+% Ideals
+\begin{minipage}{\linewidth}
+\begin{mdframed}[roundcorner=10pt]
+\begin{flushleft}
+$ideals \\
+\end{flushleft}
+\vspace{.5cm}
+\centering \scriptsize Ideals
+\end{mdframed}
+\end{minipage}
+\vspace{.2cm}
+\linebreak
+%Bonds
+\begin{minipage}{\linewidth}
+\begin{mdframed}[roundcorner=10pt]
+\begin{flushleft}
+$bonds \\
+\end{flushleft}
+\vspace{.5cm}
+\centering \scriptsize Bonds
+\end{mdframed}
+\end{minipage}
+\vspace{.2cm}
+\linebreak
+%Flaws
+\begin{minipage}{\linewidth}
+\begin{mdframed}[roundcorner=10pt]
+\begin{flushleft}
+$flaws \\
+\end{flushleft}
+\vspace{.5cm}
+\centering \scriptsize Flaws
+\end{mdframed}
+\end{minipage}
+\vspace{.2cm}
+\linebreak
+%Features & traits
+\begin{minipage}{\linewidth}
+\begin{mdframed}[roundcorner=10pt]
+\normalsize
+\begin{flushleft}
+$traits \\
+\end{flushleft}
+\centering \scriptsize Features \& Traits
+\end{mdframed}
+\end{minipage}
+\vspace{.2cm}
+\linebreak
+\end{center}
+\end{multicols}
+\begin{center}
+%languages
+\begin{minipage}{.33\textwidth}
+\begin{mdframed}[roundcorner=10pt]
+$languages 
+\vspace{4cm}
+\linebreak
+\scriptsize Other Proficiencies \& Languages
+\end{mdframed}
+\end{minipage}
+%Equipment
+\begin{minipage}{.66\textwidth}
+\begin{mdframed}[roundcorner=10pt]
+\vspace{5cm}
+\scriptsize Equipment \& Character Notes
+\end{mdframed}
+\end{minipage}
+\end{center}
+\pagebreak
+\end{document}

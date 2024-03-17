@@ -1,0 +1,44 @@
+{
+  "table": [
+    {"pr": 2, "d": 4,  "ki": 0,  "mv": 0,  "asi": false, "s": false, "feat": ["Unarmored Defense", "Martial Arts"]},
+    {"pr": 2, "d": 4,  "ki": 2,  "mv": 10, "asi": false, "s": false, "feat": ["Ki", "Unarmored Movement", "Flurry of Blows", "Patient Defense", "Step of the Wind"]},
+    {"pr": 2, "d": 4,  "ki": 3,  "mv": 10, "asi": false, "s": false, "feat": ["Deflect Missiles"]},
+    {"pr": 2, "d": 4,  "ki": 4,  "mv": 10, "asi": true,  "s": false, "feat": ["Slow Fall"]},
+    {"pr": 3, "d": 6,  "ki": 5,  "mv": 10, "asi": false, "s": false, "feat": ["Extra Attack", "Stunning Strike"]},
+    {"pr": 3, "d": 6,  "ki": 6,  "mv": 15, "asi": false, "s": true,  "feat": ["Ki-Empowered Strikes"]},
+    {"pr": 3, "d": 6,  "ki": 7,  "mv": 15, "asi": false, "s": false, "feat": ["Evasion", "Stillness of Mind"]},
+    {"pr": 3, "d": 6,  "ki": 8,  "mv": 15, "asi": true,  "s": false, "feat": []},
+    {"pr": 4, "d": 6,  "ki": 9,  "mv": 15, "asi": false, "s": false, "feat": ["Unarmored Movement improvement"]},
+    {"pr": 4, "d": 6,  "ki": 10, "mv": 20, "asi": false, "s": false, "feat": ["Purity of Body"]},
+    {"pr": 4, "d": 8,  "ki": 11, "mv": 20, "asi": false, "s": true,  "feat": []},
+    {"pr": 4, "d": 8,  "ki": 12, "mv": 20, "asi": true,  "s": false, "feat": []},
+    {"pr": 5, "d": 8,  "ki": 13, "mv": 20, "asi": false, "s": false, "feat": ["Tongue of the Sun and Moon"]},
+    {"pr": 5, "d": 8,  "ki": 14, "mv": 25, "asi": false, "s": false, "feat": ["Diamond Soul"]},
+    {"pr": 5, "d": 8,  "ki": 15, "mv": 25, "asi": false, "s": false, "feat": ["Timeless Body"]},
+    {"pr": 5, "d": 8,  "ki": 16, "mv": 25, "asi": true,  "s": false, "feat": []},
+    {"pr": 6, "d": 10, "ki": 17, "mv": 25, "asi": false, "s": true,  "feat": []},
+    {"pr": 6, "d": 10, "ki": 18, "mv": 30, "asi": false, "s": false, "feat": ["Empty Body"]},
+    {"pr": 6, "d": 10, "ki": 19, "mv": 30, "asi": true,  "s": false, "feat": []},
+    {"pr": 6, "d": 10, "ki": 20, "mv": 30, "asi": false, "s": false, "feat": ["Perfect Self"]}
+  ],
+  "hitDice": 8,
+  "ht_at_start": 8,
+  "att": "CO",
+  "features": ["Unarmed bonus attack"],
+  "school-name": "Monasteric tradition",
+  "schools": {
+    "Mercy": {
+      "features": [
+        [],[],
+        ["Hands of Healing", "Hands of Harm"],
+        [],[],
+        ["Physicians Touch"],
+        [],[],[],[],
+        ["Flurry of Healing and Harm"],
+        [],[],[],[],[],
+        ["Hand of Ultimate Mercy"],
+        [],[],[]
+      ]    
+    }
+  }
+}
