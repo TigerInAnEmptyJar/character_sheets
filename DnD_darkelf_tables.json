@@ -1,0 +1,35 @@
+{
+    "attributes": {
+        "strength": 0,
+        "dexterity": 2,
+        "constitution": 0,
+        "intelligence": 0,
+        "wisdom": 0,
+        "charisma": 1
+      },
+    "speed": 30,
+    "features": [
+        "Superior Darkvision (120 ft)",
+        "Sunlight Sensitivity", 
+        "Advantage vs charm", 
+        "Sleep spell resisted", 
+        "Reduced sleep (4h)"
+    ],
+    "proficiencies": [
+        0, 0, 
+        0, 0, 0, 0,
+        0,
+        0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 1, 0,
+        0, 0, 0, 0, 0
+    ],
+    "spells": [
+        ["Dancing Lights"], [], ["Faery Fire"], ["Darkness"], [], [], [], [], [], []
+    ],
+    "languages": ["Common", "Elvish"],
+    "weapons": [
+        {"name": "Rapier", "d": 8, "a": 0, "t": "sl"},
+        {"name": "Shortsword", "d": 6, "a": 0, "t": "sl"},
+        {"name": "Hand Crossbow", "d": 8, "a": 0, "t": "pi"}
+    ]
+}

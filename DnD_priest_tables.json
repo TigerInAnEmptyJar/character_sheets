@@ -1,7 +1,7 @@
 {
   "table": [
     {"pr": 2, "cantrips": 3, "1": 2, "2": 0, "3":0, "4":0, "5":0, "6":0,"7":0, "8":0,"9":0, "asi": false, "s": false, "feat": ["Spellcasting", "Divine Domain"]},
-    {"pr": 2, "cantrips": 3, "1": 3, "2": 0, "3":0, "4":0, "5":0, "6":0,"7":0, "8":0,"9":0, "asi": false, "s": true,  "feat": ["Channel Divinity (1/rest)"]},
+    {"pr": 2, "cantrips": 3, "1": 3, "2": 0, "3":0, "4":0, "5":0, "6":0,"7":0, "8":0,"9":0, "asi": false, "s": true,  "feat": ["Channel Divinity (1/rest)", "Turn Undead"]},
     {"pr": 2, "cantrips": 3, "1": 4, "2": 2, "3":0, "4":0, "5":0, "6":0,"7":0, "8":0,"9":0, "asi": false, "s": false, "feat": []},
     {"pr": 2, "cantrips": 4, "1": 4, "2": 3, "3":0, "4":0, "5":0, "6":0,"7":0, "8":0,"9":0, "asi": true,  "s": false, "feat": []},
     {"pr": 3, "cantrips": 4, "1": 4, "2": 3, "3":2, "4":0, "5":0, "6":0,"7":0, "8":0,"9":0, "asi": false, "s": false, "feat": ["Destroy Undead (CR 1/2)"]},
@@ -40,7 +40,7 @@
   "schools": {
     "Life": {
       "features": [
-        ["Disciple of Life"],["Preserve Life", "Turn Undead"],
+        ["Disciple of Life"],["Preserve Life"],
         [],
         [],[],
         ["Blessed Healer"],
@@ -70,17 +70,112 @@
         [],[],[]
       ],
       "spells": [ [],
-        ["command", "identify"], [],
-        ["augury", "suggestion"], [],
-        ["snondetection", "speak with dead"], [],
-        ["arcane eye", "confusion"], [],
-        ["legend lore", "scrying"], []
+        ["Command", "Identify"], [],
+        ["Augury", "Suggestion"], [],
+        ["Nondetection", "Speak with Dead"], [],
+        ["Arcane Eye", "Confusion"], [],
+        ["Legend Lore", "Scrying"], []
       ]
     },
-    "Light": {},
-    "Nature": {},
-    "Tempest": {},
-    "Trickery": {},
-    "War": {}
+    "Light": {
+      "features" :[ 
+        ["Bonus cantrip", "Warding Flare"],["Radiance of the Dawn"],
+        [],
+        [],[],
+        ["Improved Flare"],
+        [],["Potent Spellcasting"],[],[],
+        [],
+        [],[],[],[],[],
+        ["Corona of Light"],
+        [],[],[]
+      ],
+      "spells": [ [],
+        ["Burning Hands", "Faerie Fire"], [],
+        ["Flaming Sphere", "Scorching Ray"], [],
+        ["Daylight", "Fireball"], [],
+        ["Guardian of Faith", "Wall of Fire"], [],
+        ["Flame Stride", "Scrying"], []
+      ]
+    },
+    "Nature": {
+      "features" :[ 
+        ["Acolyte of Nature", "Heavy armor"],["Charm Animals and Plants"],
+        [],
+        [],[],
+        ["Dampen Elements"],
+        [],["Divine Strike"],[],[],
+        [],
+        [],[],[],[],[],
+        ["Master of Nature"],
+        [],[],[]
+      ],
+      "spells": [ [],
+        ["Animal Friendship", "Speak with Animals"], [],
+        ["Barkskin", "Spike Growth"], [],
+        ["Plant Growth", "Wind Wall"], [],
+        ["Dominate Beast", "Grasping Vine"], [],
+        ["Insect Plague", "Tree Stride"], []
+      ]
+    },
+    "Tempest": {
+      "features" :[ 
+        ["Wrath of the Storm", "Heavy armor", "Martial weapons"],["Destructive Wrath"],
+        [],
+        [],[],
+        ["Thunderbolt Strike"],
+        [],["Divine Strike"],[],[],
+        [],
+        [],[],[],[],[],
+        ["Stormborn"],
+        [],[],[]
+      ],
+      "spells": [ [],
+        ["Fog Cloud", "Thunderwave"], [],
+        ["Gust of Wind", "Shatter"], [],
+        ["Call Lightning", "Sleet Storm"], [],
+        ["Control Water", "Ice Storm"], [],
+        ["Destructive Wave", "Insect Plague"], []
+      ]
+    },
+    "Trickery": {
+      "features" :[ 
+        ["Blessing of the Trickster"],["Invoke Duplicity"],
+        [],
+        [],[],
+        ["Cloak of Shadows"],
+        [],["Divine Strike"],[],[],
+        [],
+        [],[],[],[],[],
+        ["Improved Duplicity"],
+        [],[],[]
+      ],
+      "spells": [ [],
+        ["Charm Person", "Disguise Self"], [],
+        ["Mirror Image", "Pass without Trace"], [],
+        ["Blink", "Dispel Magic"], [],
+        ["Dimension Door", "Polymorph"], [],
+        ["Dominate Person", "Modify Memory"], []
+      ]
+    },
+    "War": {
+      "features" :[ 
+        ["War Priest", "Heavy armor", "Martial weapons"],["Guided Strike"],
+        [],
+        [],[],
+        ["War God's Blessing"],
+        [],["Divine Strike"],[],[],
+        [],
+        [],[],[],[],[],
+        ["Avatar of Battle"],
+        [],[],[]
+      ],
+      "spells": [ [],
+        ["Divine Favor", "Shiled of Faith"], [],
+        ["Magic Weapon", "Spiritual Weapon"], [],
+        ["Crusader's Mantle", "Spirit Guardians"], [],
+        ["Freedom of Movement", "Stoneskin"], [],
+        ["Flame Strike", "Hold Monster"], []
+      ]
+    }
   }
 }

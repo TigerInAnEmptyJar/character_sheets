@@ -36,8 +36,14 @@ with open(args.filename) as f:
   match(c_race.lower()):
     case 'wood elf':
       race_gen = race.woodelf()
+    case 'high elf':
+      race_gen = race.highelf()
+    case 'dark elf':
+      race_gen = race.darkelf()
     case 'hill dwarf':
       race_gen = race.hilldwarf()
+    case 'mountain dwarf':
+      race_gen = race.mountaindwarf()
     case _:
       print('Race {} not found'.format(c_race))
       exit(1)

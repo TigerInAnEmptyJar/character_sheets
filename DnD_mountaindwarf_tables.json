@@ -1,17 +1,16 @@
 {
     "attributes": {
-        "strength": 0,
+        "strength": 2,
         "dexterity": 0,
         "constitution": 2,
         "intelligence": 0,
-        "wisdom": 1,
+        "wisdom": 0,
         "charisma": 0
       },
     "speed": 25,
     "features": [
         "Darkvision (60 ft)", 
-        "Dwarven Resilience", 
-        "Dwarven Toughness",
+        "Dwarven Resilience (poison)", 
         "Tool Proficiency",
         "Stonecunning"
     ],
@@ -29,5 +28,9 @@
         {"name": "Handaxe", "d": 6, "a": 0, "t": "sl"},
         {"name": "Throwing hammer", "d": 8, "a": 0, "t": "cr"},
         {"name": "Warhammer", "d": 6, "a": 0, "t": "cr"}
+    ],
+    "armors": [
+        "Light armor",
+        "Medium armor"
     ]
 }

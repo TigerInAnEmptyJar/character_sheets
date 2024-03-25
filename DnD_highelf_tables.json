@@ -1,0 +1,34 @@
+{
+    "attributes": {
+        "strength": 0,
+        "dexterity": 2,
+        "constitution": 0,
+        "intelligence": 1,
+        "wisdom": 0,
+        "charisma": 0
+      },
+    "speed": 30,
+    "features": [
+        "Darkvision (60 ft)", 
+        "Advantage vs charm", 
+        "Sleep spell resisted", 
+        "Reduced sleep (4h)",  
+        "Wood Elf Stealth",
+        "Extra cantrip"
+    ],
+    "proficiencies": [
+        0, 0, 
+        0, 0, 0, 0,
+        0,
+        0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 1, 0,
+        0, 0, 0, 0, 0
+    ],
+    "languages": ["Common", "Elvish"],
+    "weapons": [
+        {"name": "Longsword", "d": 8, "a": 0, "t": "sl"},
+        {"name": "Shortsword", "d": 6, "a": 0, "t": "sl"},
+        {"name": "Longbow", "d": 8, "a": 0, "t": "pi"},
+        {"name": "Shortbow", "d": 6, "a": 0, "t": "pi"}
+    ]
+}
