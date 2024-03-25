@@ -4,7 +4,7 @@ import json
 class race:
 
   def __init__(self, name):
-    sheet=pathlib.Path('DnD_{}_tables.json'.format(name.lower()))
+    sheet=pathlib.Path('tables/DnD_{}_tables.json'.format(name.lower()))
     self.table = {}
     if sheet.exists(): 
       race_f=open(sheet, 'r')

@@ -7,9 +7,9 @@ attribute_short_names = ['ST', 'DX', 'CO', 'IN', 'WI', 'CH']
 class profession:
   
   def __init__(self, name):
-    self.templateSheet=pathlib.Path('DnD_template.tex')
+    self.templateSheet=pathlib.Path('templates/DnD_template.tex')
     self.name = name
-    sheet=pathlib.Path('DnD_{}_tables.json'.format(name.lower()))
+    sheet=pathlib.Path('tables/DnD_{}_tables.json'.format(name.lower()))
     self.table = {}
     if sheet.exists(): 
       prof_f=open(sheet, 'r')
@@ -191,7 +191,7 @@ class monk(profession):
 class spellcaster(profession):
   def __init__(self, name):
     super().__init__(name)
-    self.templateSheet = pathlib.Path('DnD_template_spellcaster.tex')
+    self.templateSheet = pathlib.Path('templates/DnD_template_spellcaster.tex')
 
   def addStuff(self, character_dict):
     super().addStuff(character_dict)
