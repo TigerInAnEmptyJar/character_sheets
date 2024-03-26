@@ -1,5 +1,5 @@
 {
-    "table": [
+    "table": [[],
       {"pr": 2, "cantrips": 2, "1": 2, "2": 0, "3":0, "4":0, "5":0, "6":0,"7":0, "8":0,"9":0, "asi": false, "s": false, "feat": ["Spellcasting", "Bardic Inspiration (d6)"]},
       {"pr": 2, "cantrips": 2, "1": 3, "2": 0, "3":0, "4":0, "5":0, "6":0,"7":0, "8":0,"9":0, "asi": false, "s": false, "feat": ["Jack of All Trades", "Song of Rest (d6)"]},
       {"pr": 2, "cantrips": 2, "1": 4, "2": 2, "3":0, "4":0, "5":0, "6":0,"7":0, "8":0,"9":0, "asi": false, "s": true,  "feat": ["Expertise"]},
@@ -40,7 +40,7 @@
     "schools": {
       "College of Lore": {
         "features": [
-          [],[],
+          [],[],[],
           ["Bonus Proficiencies", "Cutting Words"],
           [],[],
           ["Additional Magical Secrets"],
@@ -51,7 +51,7 @@
       },
       "College of Valor": {
         "features" :[ 
-          [],[],
+          [],[],[],
           ["Bonus Proficiencies", "Combat Inspiration"],
           [],[],
           ["Extra Attack"],
@@ -62,7 +62,7 @@
       },
       "College of Creation": {
         "features" :[ 
-          [],[],
+          [],[],[],
           ["Mote of Potential", "Performance of Creation"],
           [],[],
           ["Animating Performance"],
@@ -73,7 +73,7 @@
       },
       "College of Eloquence": {
         "features" :[ 
-          [],[],
+          [],[],[],
           ["Silver Tongue", "Unsettling Words"],
           [],[],
           ["Unfailing Inspiration", "Universal Speech"],
@@ -84,7 +84,7 @@
       },
       "College of Glamour": {
         "features" :[ 
-          [],[],
+          [],[],[],
           ["Mantle of Inspiration", "Enthralling Performance"],
           [],[],
           ["Mantle of Majesty"],
@@ -95,7 +95,7 @@
       },
       "College of Spirits": {
         "features" :[ 
-          [],[],
+          [],[],[],
           ["Guiding Whispers", "Spiritual Focus", "Tales from Beyond"],
           [],[],
           ["Spirit Session"],
@@ -106,7 +106,7 @@
       },
       "College of Swords": {
         "features" :[ 
-          [],[],
+          [],[],[],
           ["Bonus Proficiencies", "Fighting Style", "Blade Flourish"],
           [],[],
           ["Extra Attack"],
@@ -117,7 +117,7 @@
       },
       "College of Whispers": {
         "features" :[ 
-          [],[],
+          [],[],[],
           ["Psychic Blades", "Words of Terror"],
           [],[],
           ["Mantle of Whispers"],

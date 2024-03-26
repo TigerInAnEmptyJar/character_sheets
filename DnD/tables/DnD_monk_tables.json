@@ -1,5 +1,5 @@
 {
-  "table": [
+  "table": [[],
     {"pr": 2, "d": 4,  "ki": 0,  "mv": 0,  "asi": false, "s": false, "feat": ["Unarmored Defense", "Martial Arts"]},
     {"pr": 2, "d": 4,  "ki": 2,  "mv": 10, "asi": false, "s": false, "feat": ["Ki", "Unarmored Movement", "Flurry of Blows", "Patient Defense", "Step of the Wind"]},
     {"pr": 2, "d": 4,  "ki": 3,  "mv": 10, "asi": false, "s": false, "feat": ["Deflect Missiles"]},
@@ -29,7 +29,7 @@
   "schools": {
     "Way of Mercy": {
       "features": [
-        [],[],
+        [],[],[],
         ["Insight", "Medicine", "Herbalism Kit", "Hands of Healing", "Hands of Harm"],
         [],[],
         ["Physicians Touch"],
@@ -42,7 +42,7 @@
     },
     "Way of the Ascendant Dragon": {
       "features": [
-        [],[],
+        [],[],[],
         ["Draconic Presence", "Draconic Strike", "Tongue of Dragons", "Breath of the Dragon"],
         [],[],
         ["Wings Unfurled"],
@@ -55,7 +55,7 @@
     },
     "Way of the Astral Self": {
       "features": [
-        [],[],
+        [],[],[],
         ["Arms of the Astral Self"],
         [],[],
         ["Visage of the Astral Self"],
@@ -68,7 +68,7 @@
     },
     "Way of the Drunken Master": {
       "features": [
-        [],[],
+        [],[],[],
         ["Performance", "Brewer's supply", "Drunken Technique"],
         [],[],
         ["Tipsy Sway"],
@@ -81,7 +81,7 @@
     },
     "Way of the Four Elements": {
       "features": [
-        [],[],
+        [],[],[],
         ["Element"],
         [],[],
         ["Element"],
@@ -94,7 +94,7 @@
     },
     "Way of the Kensei": {
       "features": [
-        [],[],
+        [],[],[],
         ["Kensei Weapons", "Agile Parry", "Kensei's Shot", "Way of the Brush"],
         [],[],
         ["Magic Kensei Weapons", "Deft Strike"],
@@ -107,7 +107,7 @@
     },
     "Way of the Long Death": {
       "features": [
-        [],[],
+        [],[],[],
         ["Touch of Death"],
         [],[],
         ["Hour of Reaping"],
@@ -120,7 +120,7 @@
     },
     "Way of the Open Hand": {
       "features": [
-        [],[],
+        [],[],[],
         ["Open Hand Technique"],
         [],[],
         ["Wholeness of Body"],
@@ -133,7 +133,7 @@
     },
     "Way of Shadow": {
       "features": [
-        [],[],
+        [],[],[],
         ["Shadow Arts"],
         [],[],
         ["Shadow Step"],
@@ -146,7 +146,7 @@
     },
     "Way of the Sun Soul": {
       "features": [
-        [],[],
+        [],[],[],
         ["Radiant Sun Bolt"],
         [],[],
         ["Searing Arc Strike"],

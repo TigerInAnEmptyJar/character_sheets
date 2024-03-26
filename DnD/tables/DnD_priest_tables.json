@@ -1,5 +1,5 @@
 {
-  "table": [
+  "table": [[],
     {"pr": 2, "cantrips": 3, "1": 2, "2": 0, "3":0, "4":0, "5":0, "6":0,"7":0, "8":0,"9":0, "asi": false, "s": false, "feat": ["Spellcasting", "Divine Domain"]},
     {"pr": 2, "cantrips": 3, "1": 3, "2": 0, "3":0, "4":0, "5":0, "6":0,"7":0, "8":0,"9":0, "asi": false, "s": true,  "feat": ["Channel Divinity (1/rest)", "Turn Undead"]},
     {"pr": 2, "cantrips": 3, "1": 4, "2": 2, "3":0, "4":0, "5":0, "6":0,"7":0, "8":0,"9":0, "asi": false, "s": false, "feat": []},
@@ -40,7 +40,7 @@
   "schools": {
     "Life": {
       "features": [
-        ["Disciple of Life"],["Preserve Life"],
+        [],["Disciple of Life"],["Preserve Life"],
         [],
         [],[],
         ["Blessed Healer"],
@@ -79,7 +79,7 @@
     },
     "Light": {
       "features" :[ 
-        ["Bonus cantrip", "Warding Flare"],["Radiance of the Dawn"],
+        [],["Bonus cantrip", "Warding Flare"],["Radiance of the Dawn"],
         [],
         [],[],
         ["Improved Flare"],
@@ -99,7 +99,7 @@
     },
     "Nature": {
       "features" :[ 
-        ["Acolyte of Nature", "Heavy armor"],["Charm Animals and Plants"],
+        [],["Acolyte of Nature", "Heavy armor"],["Charm Animals and Plants"],
         [],
         [],[],
         ["Dampen Elements"],
@@ -119,7 +119,7 @@
     },
     "Tempest": {
       "features" :[ 
-        ["Wrath of the Storm", "Heavy armor", "Martial weapons"],["Destructive Wrath"],
+        [],["Wrath of the Storm", "Heavy armor", "Martial weapons"],["Destructive Wrath"],
         [],
         [],[],
         ["Thunderbolt Strike"],
@@ -139,7 +139,7 @@
     },
     "Trickery": {
       "features" :[ 
-        ["Blessing of the Trickster"],["Invoke Duplicity"],
+        [],["Blessing of the Trickster"],["Invoke Duplicity"],
         [],
         [],[],
         ["Cloak of Shadows"],
@@ -159,7 +159,7 @@
     },
     "War": {
       "features" :[ 
-        ["War Priest", "Heavy armor", "Martial weapons"],["Guided Strike"],
+        [],["War Priest", "Heavy armor", "Martial weapons"],["Guided Strike"],
         [],
         [],[],
         ["War God's Blessing"],

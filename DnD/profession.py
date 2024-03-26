@@ -27,7 +27,7 @@ class profession:
   def has_feature(self, level, name):
     if 'table' in self.table:
       for i in range(level):
-        if name in self.table['table'][i]['feat']:
+        if name in self.table['table'][i+1]['feat']:
           return True
     return False
 
@@ -56,12 +56,12 @@ class profession:
       if not 'features' in character_dict:
         character_dict['features'] = []
       for l in range(character_dict['level']):
-        for f in self.table['table'][l]['feat']:
+        for f in self.table['table'][l+1]['feat']:
           character_dict['features'].append(f)
     if character_dict['school'] != '':
       if character_dict['school'] in self.table['schools']:
         for l in range(character_dict['level']):
-          for f in self.table['schools'][character_dict['school']]['features'][l]:
+          for f in self.table['schools'][character_dict['school']]['features'][l+1]:
             character_dict['features'].append(f)
     if 'weapons' in self.table:
       if not 'weapons' in character_dict:
@@ -83,10 +83,12 @@ class profession:
       int((character_dict['attributes']['charisma']-10)/2)
     ]
   
+    skilled_proficiency = self.proficiency(character_dict['level'])
+    unskilled_proficiency = self.unskilledProficiency(character_dict['level'])
     weapons = []
     for w in character_dict['weapons']:
       name = w['name']
-      prof = self.proficiency(character_dict['level'])
+      prof = skilled_proficiency
       dice = w['d']
       attrib = att[w['a']]
       tp = w['t']
@@ -97,8 +99,6 @@ class profession:
                                                   tp))
     for i in range(10-len(weapons)):
       weapons.append('\\\\')
-    skilled_proficiency = self.proficiency(character_dict['level'])
-    unskilled_proficiency = self.unskilledProficiency(character_dict['level'])
     return {
       'name': character_dict['name'],
       'player': character_dict['player'],
