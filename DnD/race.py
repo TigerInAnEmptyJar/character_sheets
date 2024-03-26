@@ -65,4 +65,7 @@ class hilldwarf(race):
 class mountaindwarf(race):
   def __init__(self):
     super().__init__('MountainDwarf')
-    
+
+class halforc(race):
+  def __init__(self):
+    super().__init__('Halforc')

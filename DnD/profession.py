@@ -23,6 +23,18 @@ class profession:
       return self.table['table'][level]['pr']
     else:
       return 2
+  
+  def has_feature(self, level, name):
+    if 'table' in self.table:
+      for i in range(level):
+        if name in self.table['table'][i]['feat']:
+          return True
+    return False
+
+  def unskilledProficiency(self, level):
+    if self.has_feature(level, 'Jack of All Trades'):
+      return int(self.table['table'][level]['pr']/2)
+    return 0
       
   def hits_at_start(self):
     if 'ht_at_start' in self.table:
@@ -73,9 +85,20 @@ class profession:
   
     weapons = []
     for w in character_dict['weapons']:
-      weapons.append('{}&{}&d{}+{}&{}\\\\'.format(w['name'], att[w['a']]+self.proficiency(character_dict['level']), w['d'], att[w['a']], w['t']))
+      name = w['name']
+      prof = self.proficiency(character_dict['level'])
+      dice = w['d']
+      attrib = att[w['a']]
+      tp = w['t']
+      weapons.append('{}&{}&d{}+{}&{}\\\\'.format(name, 
+                                                  prof, 
+                                                  dice, 
+                                                  attrib, 
+                                                  tp))
     for i in range(10-len(weapons)):
       weapons.append('\\\\')
+    skilled_proficiency = self.proficiency(character_dict['level'])
+    unskilled_proficiency = self.unskilledProficiency(character_dict['level'])
     return {
       'name': character_dict['name'],
       'player': character_dict['player'],
@@ -128,31 +151,31 @@ class profession:
       'skill63o': ('\\o{}' if character_dict['skills'][21]>0 else 'o'),
       'skill64o': ('\\o{}' if character_dict['skills'][22]>0 else 'o'),
       'skill65o': ('\\o{}' if character_dict['skills'][23]>0 else 'o'),
-      'skill11': character_dict['skills'][0]*self.proficiency(character_dict['level'])+att[0],
-      'skill12': character_dict['skills'][1]*self.proficiency(character_dict['level'])+att[0],
-      'skill21': character_dict['skills'][2]*self.proficiency(character_dict['level'])+att[1],
-      'skill22': character_dict['skills'][3]*self.proficiency(character_dict['level'])+att[1],
-      'skill23': character_dict['skills'][4]*self.proficiency(character_dict['level'])+att[1],
-      'skill24': character_dict['skills'][5]*self.proficiency(character_dict['level'])+att[1],
-      'skill31': character_dict['skills'][6]*self.proficiency(character_dict['level'])+att[2],
-      'skill41': character_dict['skills'][7]*self.proficiency(character_dict['level'])+att[3],
-      'skill42': character_dict['skills'][8]*self.proficiency(character_dict['level'])+att[3],
-      'skill43': character_dict['skills'][9]*self.proficiency(character_dict['level'])+att[3],
-      'skill44': character_dict['skills'][10]*self.proficiency(character_dict['level'])+att[3],
-      'skill45': character_dict['skills'][11]*self.proficiency(character_dict['level'])+att[3],
-      'skill46': character_dict['skills'][12]*self.proficiency(character_dict['level'])+att[3],
-      'skill51': character_dict['skills'][13]*self.proficiency(character_dict['level'])+att[4],
-      'skill52': character_dict['skills'][14]*self.proficiency(character_dict['level'])+att[4],
-      'skill53': character_dict['skills'][15]*self.proficiency(character_dict['level'])+att[4],
-      'skill54': character_dict['skills'][16]*self.proficiency(character_dict['level'])+att[4],
-      'skill55': character_dict['skills'][17]*self.proficiency(character_dict['level'])+att[4],
-      'skill56': character_dict['skills'][18]*self.proficiency(character_dict['level'])+att[4],
-      'skill61': character_dict['skills'][19]*self.proficiency(character_dict['level'])+att[5],
-      'skill62': character_dict['skills'][20]*self.proficiency(character_dict['level'])+att[5],
-      'skill63': character_dict['skills'][21]*self.proficiency(character_dict['level'])+att[5],
-      'skill64': character_dict['skills'][22]*self.proficiency(character_dict['level'])+att[5],
-      'skill65': character_dict['skills'][23]*self.proficiency(character_dict['level'])+att[5],
-      'passiveperception': self.proficiency(character_dict['level']) + att[4] + 10,
+      'skill11': (skilled_proficiency*character_dict['skills'][0] if character_dict['skills'][0] >0 else unskilled_proficiency)+att[0],
+      'skill12': (skilled_proficiency*character_dict['skills'][1] if character_dict['skills'][1] >0 else unskilled_proficiency)+att[0],
+      'skill21': (skilled_proficiency*character_dict['skills'][2] if character_dict['skills'][2] >0 else unskilled_proficiency)+att[1],
+      'skill22': (skilled_proficiency*character_dict['skills'][3] if character_dict['skills'][3] >0 else unskilled_proficiency)+att[1],
+      'skill23': (skilled_proficiency*character_dict['skills'][4] if character_dict['skills'][4] >0 else unskilled_proficiency)+att[1],
+      'skill24': (skilled_proficiency*character_dict['skills'][5] if character_dict['skills'][5] >0 else unskilled_proficiency)+att[1],
+      'skill31': (skilled_proficiency*character_dict['skills'][6] if character_dict['skills'][6] >0 else unskilled_proficiency)+att[2],
+      'skill41': (skilled_proficiency*character_dict['skills'][7] if character_dict['skills'][7] >0 else unskilled_proficiency)+att[3],
+      'skill42': (skilled_proficiency*character_dict['skills'][8] if character_dict['skills'][8] >0 else unskilled_proficiency)+att[3],
+      'skill43': (skilled_proficiency*character_dict['skills'][9] if character_dict['skills'][9] >0 else unskilled_proficiency)+att[3],
+      'skill44': (skilled_proficiency*character_dict['skills'][10] if character_dict['skills'][10] >0 else unskilled_proficiency)+att[3],
+      'skill45': (skilled_proficiency*character_dict['skills'][11] if character_dict['skills'][11] >0 else unskilled_proficiency)+att[3],
+      'skill46': (skilled_proficiency*character_dict['skills'][12] if character_dict['skills'][12] >0 else unskilled_proficiency)+att[3],
+      'skill51': (skilled_proficiency*character_dict['skills'][13] if character_dict['skills'][13] >0 else unskilled_proficiency)+att[4],
+      'skill52': (skilled_proficiency*character_dict['skills'][14] if character_dict['skills'][14] >0 else unskilled_proficiency)+att[4],
+      'skill53': (skilled_proficiency*character_dict['skills'][15] if character_dict['skills'][15] >0 else unskilled_proficiency)+att[4],
+      'skill54': (skilled_proficiency*character_dict['skills'][16] if character_dict['skills'][16] >0 else unskilled_proficiency)+att[4],
+      'skill55': (skilled_proficiency*character_dict['skills'][17] if character_dict['skills'][17] >0 else unskilled_proficiency)+att[4],
+      'skill56': (skilled_proficiency*character_dict['skills'][18] if character_dict['skills'][18] >0 else unskilled_proficiency)+att[4],
+      'skill61': (skilled_proficiency*character_dict['skills'][19] if character_dict['skills'][19] >0 else unskilled_proficiency)+att[5],
+      'skill62': (skilled_proficiency*character_dict['skills'][20] if character_dict['skills'][20] >0 else unskilled_proficiency)+att[5],
+      'skill63': (skilled_proficiency*character_dict['skills'][21] if character_dict['skills'][21] >0 else unskilled_proficiency)+att[5],
+      'skill64': (skilled_proficiency*character_dict['skills'][22] if character_dict['skills'][22] >0 else unskilled_proficiency)+att[5],
+      'skill65': (skilled_proficiency*character_dict['skills'][23] if character_dict['skills'][23] >0 else unskilled_proficiency)+att[5],
+      'passiveperception': (skilled_proficiency*character_dict['skills'][17] if character_dict['skills'][17] >0 else unskilled_proficiency)+att[4] + 10,
       'speed': character_dict['speed'],
       'hitDice': '{} d{}'.format(character_dict['level'], self.hit_dice()),
       'traits': '\\\\ \n'.join(character_dict['features']),
@@ -186,7 +209,7 @@ class monk(profession):
       w['a'] = attribute
     if not 'ac' in character_dict:
       character_dict['ac'] = 0
-    character_dict['ac'] = 10 + character_dict['attributes']['dexterity'] + character_dict['attributes']['wisdom']
+    character_dict['ac'] = 10 + int((character_dict['attributes']['dexterity']-10)/2) + int((character_dict['attributes']['wisdom']-10)/2)
 
 class spellcaster(profession):
   def __init__(self, name):
@@ -266,12 +289,14 @@ class priest(spellcaster):
     print('Reading priest profession')
 
   def spellSavingThrow(self, character_dict):
-    return 8 + character_dict['attributes']['wisdom'] + self.table['table'][character_dict['level']]['pr']
+    return 8 + int((character_dict['attributes']['wisdom']-10)/2) + self.table['table'][character_dict['level']]['pr']
 
 
-class bard(profession):
+class bard(spellcaster):
   
   def __init__(self):
     super().__init__('bard')
     print('Reading bard profession')
     
+  def spellSavingThrow(self, character_dict):
+    return 8 + int((character_dict['attributes']['charisma']-10)/2) + self.table['table'][character_dict['level']]['pr']

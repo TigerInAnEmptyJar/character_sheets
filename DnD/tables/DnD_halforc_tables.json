@@ -1,0 +1,27 @@
+{
+    "attributes": {
+        "strength": 2,
+        "dexterity": 0,
+        "constitution": 1,
+        "intelligence": 0,
+        "wisdom": 0,
+        "charisma": 0
+      },
+    "speed": 30,
+    "features": [
+        "Darkvision (60 ft)",
+        "Relentless Endurance", 
+        "Savage Attacks"
+    ],
+    "proficiencies": [
+        0, 0, 
+        0, 0, 0, 0,
+        0,
+        0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0,
+        0, 0, 1, 0, 0
+    ],
+    "spells": [],
+    "languages": ["Common", "Orc"],
+    "weapons": []
+}

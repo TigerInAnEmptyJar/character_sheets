@@ -22,7 +22,7 @@
         0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0
     ],
-    "languages": ["Common", "Elvish"],
+    "languages": ["Common", "Dwarvish"],
     "weapons": [
         {"name": "Battleaxe", "d": 8, "a": 0, "t": "sl"},
         {"name": "Handaxe", "d": 6, "a": 0, "t": "sl"},

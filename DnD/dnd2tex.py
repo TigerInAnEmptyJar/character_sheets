@@ -44,6 +44,8 @@ with open(args.filename) as f:
       race_gen = race.hilldwarf()
     case 'mountain dwarf':
       race_gen = race.mountaindwarf()
+    case 'halforc':
+      race_gen = race.halforc()
     case _:
       print('Race {} not found'.format(c_race))
       exit(1)
@@ -53,6 +55,8 @@ with open(args.filename) as f:
       prof_gen = profession.monk()
     case 'cleric':
       prof_gen = profession.priest()
+    case 'bard':
+      prof_gen = profession.bard()
     case _:
       print('Profession {} not found'.format(prof))
       exit(1)
