@@ -1,6 +1,7 @@
 import pathlib
 import json
 import string
+import os
 
 attribute_short_names = ['ST', 'DX', 'CO', 'IN', 'WI', 'CH']
 
@@ -191,6 +192,8 @@ class profession:
       t = string.Template(tf.read())
       sheet = t.safe_substitute(character_dict)
       print('Writing character to file {}.'.format(filename))
+      if not filename.parent.exists():
+        os.mkdir(filename.parent)
       with open(filename, 'w') as output:
         output.write(sheet)
 
