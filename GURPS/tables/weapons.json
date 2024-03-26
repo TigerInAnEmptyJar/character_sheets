@@ -1,0 +1,15 @@
+{
+    "melee": [
+        {"name":"Fine Mage Quaterstaff", "skill": "Staff"           , "cost": 60,  "weight": 4, "range": [2],   "parry": 2, "damage": [[1, 2]],         "type": ["cr"]},
+        {"name":"Longsword"            , "skill": "Two-Handed Sword", "cost": 700, "weight": 4, "range": [1,2], "parry": 0, "damage": [[1, 2], [0, 3]], "type": ["cut", "imp"]}
+    ],
+    "ranged": [
+        {"name":"Short Bow"            , "skill": "Bow"                       , "cost":50, "weight": [1.5, 0.1], "range": [10,15], "acc": 1, "damage": {"value": [0, 0]}                  , "type": "imp" },
+        {"name":"Stone Missile"        , "skill": "Innate Attack (Projectile)", "cost":0 , "weight": null      , "range": [40,80], "acc": 2, "damage": {"fixed": true, "value": "1d+1/Fp"}, "type": "cr"},
+        {"name":"Fireball"             , "skill": "Innate Attack (Projectile)", "cost":0 , "weight": null      , "range": [25,50], "acc": 1, "damage": {"fixed": true, "value": "1d/Fp"},   "type": "fire"},
+        {"name":"Explosive Fireball"   , "skill": "Innate Attack (Projectile)", "cost":0 , "weight": null      , "range": [25,50], "acc": 1, "damage": {"fixed": true, "value": "1d/2Fp"},  "type": "fire"}
+    ],
+    "armor": [
+        {"name": "Mage Robe", "loc": "all w/o face", "dr": 2, "weight": 18, "cost": 750}
+    ]
+}

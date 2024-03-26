@@ -1,0 +1,18 @@
+[
+    { "name": "Magery 1",          "level": 1,   "points": 15, "spells": true },
+    { "name": "Magery 2",          "level": 2,   "points": 25, "spells": true },
+    { "name": "Magery 3",          "level": 3,   "points": 35, "spells": true },
+    { "name": "Magery 4",          "level": 4,   "points": 45, "spells": true },
+    { "name": "Magery 5",          "level": 5,   "points": 55, "spells": true },
+    { "name": "Energy reserve",    "points": 3,  "level": true },
+    { "name": "Extra Attack",      "points": 25, "level": true },
+    { "name": "Combat Reflexes",   "points": 15},
+    { "name": "Frightens Animals", "points": -10 },
+    { "name": "Curious",           "points": -5 },
+    { "name": "Absent Mindedness", "points": -15 },
+    { "name": "Oblivious",         "points": -5 },
+    { "name": "Social Stigma (Minority Group)", "points": -10},
+    { "name": "Gullibility",                    "points": -10},
+    { "name": "Odious Personal Habit",          "points": -5},
+    { "name": "Wealth (Struggling)",            "points": -10}  
+]

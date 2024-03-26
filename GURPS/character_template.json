@@ -1,0 +1,56 @@
+{
+  "name": "Conan the Barbarian",
+  "player": "Alice",
+  "height": 180,
+  "weight": 100,
+  "size_mod": 0,
+  "age": 24,
+  "profession": "Barbarian",
+  "race": "Human",
+  "total_points": 180,
+  "unspent_points": 0,
+  "attributes": {
+    "strength": 40,
+    "dexterity": 20,
+    "intelligence": -20,
+    "constitution": 10,
+    "hp": 0,
+    "will": 0,
+    "perception": 0,
+    "fatigue": 0,
+    "speed": 5,
+    "move": 0,
+    "dodge": 0,
+    "parry": 0,
+    "block": 0
+  },
+  "encumbrance": 0,
+  "advantages": [
+    {"name": "Extra Attack",   "level": 1},
+    {"name": "Combat Reflexes"}
+  ],
+  "disadvantages": [
+    {"name": "Social Stigma (Minority Group)"},
+    {"name": "Gullibility"},
+    {"name": "Odious Personal Habit"}
+  ],
+  "languages":[
+    {"name" : "Common", "spoken": true, "written": true, "points": 0}
+  ],
+  "melee": ["Longsword"],
+  "ranged": [
+    {"name": "Short Bow", "st": 14, "shots": 20}
+  ],
+  "armor": [],
+  "inventory": [
+    {"name": "Belt",                    "cost": 15, "weight": 0.5},
+    {"name": "Backpack",                "cost": 40, "weight": 3},
+    {"name": "Canteen (2lb water)",     "cost": 10, "weight": 3},
+    {"name": "Blanket",                 "cost": 20, "weight": 4},
+    {"name": "Personal Camping Basics", "cost": 5 , "weight": 1}
+  ],
+  "skills": [ 
+  {"name": "Two-Handed Sword", "points": 8}
+  ],
+  "spells": []
+}
