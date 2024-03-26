@@ -1,0 +1,51 @@
+{
+  "name": "Beard Stronginthearm",
+  "player": "Bob",
+  "profession": "Cleric",
+  "level": 4,
+  "background": "Acolyte",
+  "race": "Hill Dwarf",
+  "sex": "male",
+  "alignment": "Neutral Good",
+  "experience": "Lathander",
+  "hits": 40,
+  "attributes": {
+    "strength": 14,
+    "dexterity": 10,
+    "constitution": 14,
+    "intelligence": 10,
+    "wisdom": 15,
+    "charisma": 8
+  },
+  "weapons":[
+    {"name": "Light Crossbow", "a": 1, "d": 8, "t": "pi"}
+  ],  
+  "ac": 18,
+  "skills": [
+  0, 1, 
+  0, 0, 0, 0,
+  0,
+  0, 0, 0, 0, 0, 1,
+  1, 0, 1, 1, 1, 0,
+  1, 0, 0, 0, 0
+  ],
+  "spells": [
+    ["Light", "Toll of the Dead", "Guidance"],
+    ["Healing Word", "Shield of Faith", "Create/Destroy Water"],
+    ["Lesser Restoration", "Spiritual Weapon", "Aid"],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+  ],
+  "features": [],
+  "personality": "Confused",
+  "ideals": "Greater Good",
+  "bonds": "Common People",
+  "flaws": "Gluttony",
+  "languages": [],
+  "school": "Life"
+}
