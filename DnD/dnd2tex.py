@@ -47,7 +47,9 @@ if args.list_professions:
  'Druid',
  'Fighter',
  'Monk',
- 'Ranger'
+ 'Paladin',
+ 'Ranger',
+ 'Rogue'
 ]))
   exit(0)
 
@@ -117,6 +119,13 @@ with open(args.filename) as f:
       prof_gen = profession.ranger()
     case 'druid':
       prof_gen = profession.druid()
+    case 'paladin':
+      prof_gen = profession.paladin()
+    case 'rogue':
+      if char['school'] == 'Arcane Trickster':
+        prof_gen = profession.arcanetrickster()
+      else:
+        prof_gen = profession.rogue()
     case _:
       print('Profession {} not found'.format(prof))
       exit(1)

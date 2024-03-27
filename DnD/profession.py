@@ -226,6 +226,12 @@ class fighter(profession):
     super().__init__('fighter')
     print("Reading fighter profession")
 
+class rogue(profession):
+
+  def __init__(self):
+    super().__init__('rogue')
+    print("Reading rogue profession")
+
 class spellcaster(profession):
   def __init__(self, name):
     super().__init__(name)
@@ -339,3 +345,16 @@ class druid(spellcaster):
 
   def spellSavingThrow(self, character_dict):
     return 8 + int((character_dict['attributes']['wisdom']-10)/2) + self.table['table'][character_dict['level']]['pr']
+
+class paladin(spellcaster):
+  def __init__(self):
+    super().__init__('paladin')
+    print('Reading paladin profession')
+
+  def spellSavingThrow(self, character_dict):
+    return 8 + int((character_dict['attributes']['charisma']-10)/2) + self.table['table'][character_dict['level']]['pr']
+
+class arcanetrickster(spellcaster):
+  def __init__(self):
+    super().__init__('rogue')
+    print('Reading rogue profession (specialization Arcane Trickster)')
