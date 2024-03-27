@@ -41,9 +41,13 @@ if args.list_races:
 
 if args.list_professions:
   print('Supported professions are {}'.format([
+ 'Barbarian',
  'Bard',
  'Cleric',
- 'Monk'
+ 'Druid',
+ 'Fighter',
+ 'Monk',
+ 'Ranger'
 ]))
   exit(0)
 
@@ -102,6 +106,17 @@ with open(args.filename) as f:
       prof_gen = profession.priest()
     case 'bard':
       prof_gen = profession.bard()
+    case 'barbarian':
+      prof_gen = profession.barbarian()
+    case 'fighter':
+      if char['school'] == 'Eldrich Knight':
+        prof_gen = profession.eldrichknight()
+      else:
+        prof_gen = profession.fighter()
+    case 'ranger':
+      prof_gen = profession.ranger()
+    case 'druid':
+      prof_gen = profession.druid()
     case _:
       print('Profession {} not found'.format(prof))
       exit(1)

@@ -1,0 +1,85 @@
+{
+  "table": [[],
+    {"pr": 2, "cantrips": 0, "known": 0 , "1":0, "2": 0, "3": 0, "4":0, "asi": false, "s": false, "feat": ["Fighting Style", "Second Wind"]},
+    {"pr": 2, "cantrips": 0, "known": 0 , "1":0, "2": 0, "3": 0, "4":0, "asi": false, "s": false, "feat": ["Action Surge (1 use)"]},
+    {"pr": 2, "cantrips": 2, "known": 3,  "1":2, "2": 0, "3": 0, "4":0, "asi": false, "s": false, "feat": ["Martial Archetype"]},
+    {"pr": 2, "cantrips": 2, "known": 4,  "1":3, "2": 0, "3": 0, "4":0, "asi": true,  "s": false, "feat": []},
+    {"pr": 3, "cantrips": 2, "known": 4,  "1":3, "2": 0, "3": 0, "4":0, "asi": false, "s": false, "feat": ["Extra Attack"]},
+    {"pr": 3, "cantrips": 2, "known": 4,  "1":3, "2": 0, "3": 0, "4":0, "asi": true , "s": false, "feat": []},
+    {"pr": 3, "cantrips": 2, "known": 5,  "1":4, "2": 2, "3": 0, "4":0, "asi": false, "s": true , "feat": []},
+    {"pr": 3, "cantrips": 2, "known": 6,  "1":4, "2": 2, "3": 0, "4":0, "asi": true,  "s": false, "feat": []},
+    {"pr": 4, "cantrips": 2, "known": 6,  "1":4, "2": 2, "3": 0, "4":0, "asi": false, "s": false, "feat": ["Indomitable (1 use)"]},
+    {"pr": 4, "cantrips": 3, "known": 7,  "1":4, "2": 3, "3": 0, "4":0, "asi": false, "s": true , "feat": []},
+    {"pr": 4, "cantrips": 3, "known": 8,  "1":4, "2": 3, "3": 0, "4":0, "asi": false, "s": false, "feat": ["Extra Attack (2)"]},
+    {"pr": 4, "cantrips": 3, "known": 8,  "1":4, "2": 3, "3": 0, "4":0, "asi": true,  "s": false, "feat": []},
+    {"pr": 5, "cantrips": 3, "known": 9,  "1":4, "2": 3, "3": 2, "4":0, "asi": false, "s": false, "feat": ["Indomitable (2 uses)"]},
+    {"pr": 5, "cantrips": 3, "known": 10, "1":4, "2": 3, "3": 2, "4":0, "asi": true , "s": false, "feat": []},
+    {"pr": 5, "cantrips": 3, "known": 10, "1":4, "2": 3, "3": 2, "4":0, "asi": false, "s": true , "feat": []},
+    {"pr": 5, "cantrips": 3, "known": 11, "1":4, "2": 3, "3": 3, "4":0, "asi": true,  "s": false, "feat": []},
+    {"pr": 6, "cantrips": 3, "known": 11, "1":4, "2": 3, "3": 3, "4":0, "asi": false, "s": false, "feat": ["Action Surge (2 uses)", "Indomitable (2 uses)"]},
+    {"pr": 6, "cantrips": 3, "known": 11, "1":4, "2": 3, "3": 3, "4":0, "asi": false, "s": true,  "feat": []},
+    {"pr": 6, "cantrips": 3, "known": 12, "1":4, "2": 3, "3": 3, "4":1, "asi": true,  "s": false, "feat": []},
+    {"pr": 6, "cantrips": 3, "known": 13, "1":4, "2": 3, "3": 3, "4":1, "asi": false, "s": false, "feat": ["Extra Attack (3)"]}
+  ],
+  "hitDice": 10,
+  "ht_at_start": 10,
+  "att": "CO",
+  "proficiencies": ["Light armor", "Medium armor", "Heavy armor", "Shield", "Simple weapons", "Martial weapons"],
+  "spell_attribute": 3,
+  "skills": [
+    1, 0, 
+    0, 0, 0, 0,
+    1,
+    0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0
+  ],
+  "school-name": "Matrial Archetype",
+  "schools": {
+    "Champion": {
+      "features": [
+        [],[],[],
+        ["Improved Critical"],
+        [],[],[],
+        ["Remarkable Athlete"],
+        [],[],
+        ["Additional Fighting Style"],
+        [],[],[],[],
+        ["Superior Critical"],
+        [],[],
+        ["Survivor"],
+        [],[]
+      ]    
+    },
+    "Battle Master": {
+      "features": [
+        [],[],[],
+        ["Combat Superiority", "Student of War"],
+        [],[],[],
+        ["Know your Enemy"],
+        [],[],
+        ["Improved Combat Superiority"],
+        [],[],[],[],
+        ["Relentless"],
+        [],[],
+        [],
+        [],[]
+      ]    
+    },
+    "Eldrich Knight": {
+      "features": [
+        [],[],[],
+        ["Spellcasting", "Weapon Bond"],
+        [],[],[],
+        ["War Magic"],
+        [],[],
+        ["Eldrich Strike"],
+        [],[],[],[],
+        ["Arcane Charge"],
+        [],[],
+        ["Improved War Magic"],
+        [],[]
+      ]    
+    }
+  }
+}

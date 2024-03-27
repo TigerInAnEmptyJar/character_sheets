@@ -1,0 +1,66 @@
+{
+  "table": [[],
+    {"pr": 2, "ranges": 2,  "rage": 2,  "asi": false, "feat": ["Rage", "Unarmored Defense"]},
+    {"pr": 2, "ranges": 2,  "rage": 2,  "asi": false, "feat": ["Reckless Attack", "Danger Sense"]},
+    {"pr": 2, "ranges": 3,  "rage": 2,  "asi": false, "feat": ["Primal Path"]},
+    {"pr": 2, "ranges": 3,  "rage": 2,  "asi": true,  "feat": []},
+    {"pr": 3, "ranges": 3,  "rage": 2,  "asi": false, "feat": ["Extra Attack", "Fast Movement"]},
+    {"pr": 3, "ranges": 4,  "rage": 2,  "asi": false, "feat": ["Path feature"]},
+    {"pr": 3, "ranges": 4,  "rage": 2,  "asi": false, "feat": ["Feral Instinct"]},
+    {"pr": 3, "ranges": 4,  "rage": 2,  "asi": true,  "feat": []},
+    {"pr": 4, "ranges": 4,  "rage": 3,  "asi": false, "feat": ["Brutal Critical (1die)"]},
+    {"pr": 4, "ranges": 4,  "rage": 3,  "asi": false, "feat": ["Path feature 2"]},
+    {"pr": 4, "ranges": 4,  "rage": 3,  "asi": false, "feat": ["Relentless Rage"]},
+    {"pr": 4, "ranges": 5,  "rage": 3,  "asi": true,  "feat": []},
+    {"pr": 5, "ranges": 5,  "rage": 3,  "asi": false, "feat": ["Brutal Critical (2 dice)"]},
+    {"pr": 5, "ranges": 5,  "rage": 3,  "asi": false, "feat": ["Path feature 3"]},
+    {"pr": 5, "ranges": 5,  "rage": 3,  "asi": false, "feat": ["Persistent Rage"]},
+    {"pr": 5, "ranges": 5,  "rage": 4,  "asi": true,  "feat": []},
+    {"pr": 6, "ranges": 6,  "rage": 4,  "asi": false, "feat": ["Brutal Critical (3 dice)"]},
+    {"pr": 6, "ranges": 6,  "rage": 4,  "asi": false, "feat": ["Indomitable Might"]},
+    {"pr": 6, "ranges": 6,  "rage": 4,  "asi": true,  "feat": []},
+    {"pr": 6, "ranges": 6,  "rage": 4,  "asi": false, "feat": ["Primal Champion"]}
+  ],
+  "hitDice": 12,
+  "ht_at_start": 12,
+  "att": "CO",
+  "proficiencies": ["Light armor", "Medium armor", "Shields", "Simple weapons", "Marital weapons"],
+  "weapons": [],
+  "skills": [
+    1, 0, 
+    0, 0, 0, 0,
+    1,
+    0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0
+  ],
+  "school-name": "Path",
+  "schools": {
+    "Path of the Berserker": {
+      "features": [
+        [],[],[],
+        ["Frenzy"],
+        [],[],
+        ["Mindless Rage"],
+        [],[],[],
+        ["Intimidating Presence"],
+        [],[],[],
+        ["Retaliation"],
+        [],[],[],[],[],[]
+      ]    
+    },
+    "Path of the Totem Warrior": {
+      "features": [
+        [],[],[],
+        ["Spirit Seeker", "Totem Spirit"],
+        [],[],
+        ["Aspect of the Beast"],
+        [],[],[],
+        ["Spirit Walker"],
+        [],[],[],
+        ["Totem Attunement"],
+        [],[],[],[],[],[]
+      ]    
+    }
+  }
+}

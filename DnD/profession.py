@@ -214,6 +214,18 @@ class monk(profession):
       character_dict['ac'] = 0
     character_dict['ac'] = 10 + int((character_dict['attributes']['dexterity']-10)/2) + int((character_dict['attributes']['wisdom']-10)/2)
 
+class barbarian(profession):
+
+  def __init__(self):
+    super().__init__('barbarian')
+    print("Reading barbarian profession")
+
+class fighter(profession):
+
+  def __init__(self):
+    super().__init__('fighter')
+    print("Reading fighter profession")
+
 class spellcaster(profession):
   def __init__(self, name):
     super().__init__(name)
@@ -232,16 +244,16 @@ class spellcaster(profession):
       for a in character_dict['skills']:
         character_dict['skills'][a] = (1 if character_dict['skills'][a] + self.table['skills'][a] >0 else 0)
     character_dict['spell_attribute'] = self.table['spell_attribute']
-    character_dict['ncantrips']=self.table['table'][character_dict['level']]['cantrips']
-    character_dict['n1levelspells']=self.table['table'][character_dict['level']]['1']
-    character_dict['n2levelspells']=self.table['table'][character_dict['level']]['2']
-    character_dict['n3levelspells']=self.table['table'][character_dict['level']]['3']
-    character_dict['n4levelspells']=self.table['table'][character_dict['level']]['4']
-    character_dict['n5levelspells']=self.table['table'][character_dict['level']]['5']
-    character_dict['n6levelspells']=self.table['table'][character_dict['level']]['6']
-    character_dict['n7levelspells']=self.table['table'][character_dict['level']]['7']
-    character_dict['n8levelspells']=self.table['table'][character_dict['level']]['8']
-    character_dict['n9levelspells']=self.table['table'][character_dict['level']]['9']
+    character_dict['ncantrips']=0 if not 'cantrips' in self.table['table'][character_dict['level']] else self.table['table'][character_dict['level']]['cantrips']
+    character_dict['n1levelspells']=0 if not '1' in self.table['table'][character_dict['level']] else self.table['table'][character_dict['level']]['1']
+    character_dict['n2levelspells']=0 if not '2' in self.table['table'][character_dict['level']] else self.table['table'][character_dict['level']]['2']
+    character_dict['n3levelspells']=0 if not '3' in self.table['table'][character_dict['level']] else self.table['table'][character_dict['level']]['3']
+    character_dict['n4levelspells']=0 if not '4' in self.table['table'][character_dict['level']] else self.table['table'][character_dict['level']]['4']
+    character_dict['n5levelspells']=0 if not '5' in self.table['table'][character_dict['level']] else self.table['table'][character_dict['level']]['5']
+    character_dict['n6levelspells']=0 if not '6' in self.table['table'][character_dict['level']] else self.table['table'][character_dict['level']]['6']
+    character_dict['n7levelspells']=0 if not '7' in self.table['table'][character_dict['level']] else self.table['table'][character_dict['level']]['7']
+    character_dict['n8levelspells']=0 if not '8' in self.table['table'][character_dict['level']] else self.table['table'][character_dict['level']]['8']
+    character_dict['n9levelspells']=0 if not '9' in self.table['table'][character_dict['level']] else self.table['table'][character_dict['level']]['9']
     for s in character_dict['spells']:
       min = len(s) + 2
       if min < 7: 
@@ -303,3 +315,27 @@ class bard(spellcaster):
     
   def spellSavingThrow(self, character_dict):
     return 8 + int((character_dict['attributes']['charisma']-10)/2) + self.table['table'][character_dict['level']]['pr']
+
+class eldrichknight(spellcaster):
+  def __init__(self):
+    super().__init__('fighter')
+    print('Reading fighter profession (specialization Eldrich Knight)')
+
+  def spellSavingThrow(self, character_dict):
+    return 8 + int((character_dict['attributes']['intelligence']-10)/2) + self.table['table'][character_dict['level']]['pr']
+
+class ranger(spellcaster):
+  def __init__(self):
+    super().__init__('ranger')
+    print('Reading ranger profession')
+
+  def spellSavingThrow(self, character_dict):
+    return 8 + int((character_dict['attributes']['wisdom']-10)/2) + self.table['table'][character_dict['level']]['pr']
+
+class druid(spellcaster):
+  def __init__(self):
+    super().__init__('druid')
+    print('Reading druid profession')
+
+  def spellSavingThrow(self, character_dict):
+    return 8 + int((character_dict['attributes']['wisdom']-10)/2) + self.table['table'][character_dict['level']]['pr']
