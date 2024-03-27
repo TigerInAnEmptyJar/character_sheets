@@ -51,6 +51,7 @@ class highelf(race):
 class darkelf(race):  
   def __init__(self):
     super().__init__('DarkElf')
+
   def addStuff(self, character_dict):
     super().addStuff(character_dict)
     if not 'spells' in character_dict:
@@ -69,3 +70,64 @@ class mountaindwarf(race):
 class halforc(race):
   def __init__(self):
     super().__init__('Halforc')
+
+class dragonborn(race):  
+  def __init__(self):
+    super().__init__('Dragonborn')
+  def addStuff(self, character_dict):
+    super().addStuff(character_dict)
+    if not 'spells' in character_dict:
+      character_dict['spells'] = []
+    for s in self.table['spells']:
+      character_dict['spells'].append(s)
+    if character_dict['level'] >= 16:
+      d = '5d6'
+    elif character_dict['level']>= 11:
+      d = '4d6'
+    elif character_dict['level']>= 6:
+      d = '3d6'
+    else:
+      d = '2d6' 
+    character_dict['weapons'].append({'name': 'Breath Weapon', 'd': d, 'a': 2,'t': 'element'})
+
+class forestgnome(race):  
+  def __init__(self):
+    super().__init__('ForestGnome')
+  def addStuff(self, character_dict):
+    super().addStuff(character_dict)
+    if not 'spells' in character_dict:
+      character_dict['spells'] = []
+    for s in self.table['spells']:
+      character_dict['spells'].append(s)
+
+class halfelf(race):  
+  def __init__(self):
+    super().__init__('HalfElf')
+
+class human(race):  
+  def __init__(self):
+    super().__init__('Human')
+
+class lightfoothalfling(race):  
+  def __init__(self):
+    super().__init__('LightfootHalfling')
+
+class stouthalfling(race):  
+  def __init__(self):
+    super().__init__('StoutHalfling')
+
+class rockgnome(race):  
+  def __init__(self):
+    super().__init__('RockGnome')
+
+class tiefling(race):  
+  def __init__(self):
+    super().__init__('Tiefling')
+
+  def addStuff(self, character_dict):
+    super().addStuff(character_dict)
+    if not 'spells' in character_dict:
+      character_dict['spells'] = []
+    for s in self.table['spells']:
+      character_dict['spells'].append(s)
+

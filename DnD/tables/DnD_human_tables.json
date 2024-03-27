@@ -1,0 +1,24 @@
+{
+    "attributes": {
+        "strength": 1,
+        "dexterity": 1,
+        "constitution": 1,
+        "intelligence": 1,
+        "wisdom": 1,
+        "charisma": 1
+      },
+    "speed": 30,
+    "features": [
+        "Extra language"
+    ],
+    "proficiencies": [
+        0, 0, 
+        0, 0, 0, 0,
+        0,
+        0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0
+    ],
+    "languages": ["Common"],
+    "weapons": []
+}

@@ -1,0 +1,29 @@
+{
+    "attributes": {
+        "strength": 0,
+        "dexterity": 0,
+        "constitution": 0,
+        "intelligence": 0,
+        "wisdom": 0,
+        "charisma": 2
+      },
+    "speed": 30,
+    "features": [
+        "Darkvision (60 ft)", 
+        "Advantage vs charm", 
+        "Sleep spell resisted", 
+        "Ability score increasement (2x1)",  
+        "Proficiency in 2 skills", 
+        "Extra language"
+    ],
+    "proficiencies": [
+        0, 0, 
+        0, 0, 0, 0,
+        0,
+        0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0
+    ],
+    "languages": ["Common", "Elvish"],
+    "weapons": []
+}

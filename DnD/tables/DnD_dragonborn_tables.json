@@ -1,0 +1,25 @@
+{
+    "attributes": {
+        "strength": 2,
+        "dexterity": 0,
+        "constitution": 0,
+        "intelligence": 0,
+        "wisdom": 0,
+        "charisma": 1
+      },
+    "speed": 30,
+    "features": [
+        "Draconic Ancestry", 
+        "Damage Resistence"
+    ],
+    "proficiencies": [
+        0, 0, 
+        0, 0, 0, 0,
+        0,
+        0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0
+    ],
+    "languages": ["Common", "Draconic"],
+    "weapons": []
+}

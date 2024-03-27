@@ -1,0 +1,27 @@
+{
+    "attributes": {
+        "strength": 0,
+        "dexterity": 2,
+        "constitution": 0,
+        "intelligence": 0,
+        "wisdom": 0,
+        "charisma": 1
+      },
+    "speed": 25,
+    "features": [
+        "Reroll natural '1's", 
+        "Advantage vs fight checks", 
+        "Halfling Nimbleness",  
+        "Naturally Stealthy"
+    ],
+    "proficiencies": [
+        0, 0, 
+        0, 0, 0, 0,
+        0,
+        0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0
+    ],
+    "languages": ["Common", "Halfling"],
+    "weapons": []
+}

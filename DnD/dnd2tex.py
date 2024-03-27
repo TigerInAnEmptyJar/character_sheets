@@ -15,8 +15,37 @@ template_sheet=pathlib.Path('DnD_template.tex')
 parser = argparse.ArgumentParser(prog='dnd2tex', description='Converts a DnD json sheet to tex', add_help=True)
 parser.add_argument('filename')
 parser.add_argument('--outfile', action='store', required=True)
+parser.add_argument('--list-races', action='store_true')
+parser.add_argument('--list-professions', action='store_true')
 
 args = parser.parse_args()
+
+if args.list_races:
+  print('Supported races are {}'.format([
+ 'Wood Elf',
+ 'High Elf',
+ 'Dark Elf',
+ 'Hill Dwarf',
+ 'Mountain Dwarf',
+ 'Halforc',
+ 'Dragonborn',
+ 'Halfelf',
+ 'Human',
+ 'Lightfoot Halfling',
+ 'Stout Halfling',
+ 'Forest Gnome',
+ 'Rock Gnome',
+ 'Tiefling',
+]))
+  exit(0)
+
+if args.list_professions:
+  print('Supported professions are {}'.format([
+ 'Bard',
+ 'Cleric',
+ 'Monk'
+]))
+  exit(0)
 
 out_path = pathlib.Path(args.outfile)
 if not out_path.is_absolute():
@@ -46,6 +75,22 @@ with open(args.filename) as f:
       race_gen = race.mountaindwarf()
     case 'halforc':
       race_gen = race.halforc()
+    case 'dragonborn':
+      race_gen = race.dragonborn()
+    case 'forest gnome':
+      race_gen = race.forestgnome()
+    case 'halfelf':
+      race_gen = race.halfelf()
+    case 'human':
+      race_gen = race.human()
+    case 'lightfoot halfling':
+      race_gen = race.lightfoothalfling()
+    case 'stout halfling':
+      race_gen = race.stouthalfling()
+    case 'rock gnome':
+      race_gen = race.rockgnome()
+    case 'tiefling':
+      race_gen = race.tiefling()
     case _:
       print('Race {} not found'.format(c_race))
       exit(1)
