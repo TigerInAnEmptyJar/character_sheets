@@ -25,6 +25,7 @@
   "ht_at_start": 8,
   "att": "CO",
   "features": ["Sneak Attack"],
+  "spell_attribute": 3,
   "school-name": "Archetype",
   "proficiencies": ["Simple Weapons", "Hand Crossbows", "Longswords", "Rapiers", "Shortswords", "Thieves' Tools"],
   "armors": ["Light Armors"],
