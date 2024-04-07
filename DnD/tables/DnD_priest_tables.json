@@ -40,13 +40,13 @@
   "schools": {
     "Life": {
       "features": [
-        [],["Disciple of Life"],["Preserve Life"],
-        [],
-        [],[],
+        [],["Disciple of Life"],
+        ["Preserve Life"],
+        [],[],[],
         ["Blessed Healer"],
-        [],["Divine Strike"],[],[],
         [],
-        [],[],[],[],[],
+        ["Divine Strike"],
+        [],[],[],[],[],[],[],[],
         ["Suppreme Healing"],
         [],[],[]
       ],
@@ -61,11 +61,11 @@
       "features" :[ 
         [],["Knowledge of the Ages"],
         [],
-        [],[],
+        [],[],[],
         ["Read Thoughts"],
-        [],["Potent Spellcasting"],[],[],
         [],
-        [],[],[],[],[],
+        ["Potent Spellcasting"],
+        [],[],[],[],[],[],[],[],
         ["Visions of the Past"],
         [],[],[]
       ],
@@ -79,13 +79,13 @@
     },
     "Light": {
       "features" :[ 
-        [],["Bonus cantrip", "Warding Flare"],["Radiance of the Dawn"],
-        [],
-        [],[],
+        [],["Bonus cantrip", "Warding Flare"],
+        ["Radiance of the Dawn"],
+        [],[],[],
         ["Improved Flare"],
-        [],["Potent Spellcasting"],[],[],
         [],
-        [],[],[],[],[],
+        ["Potent Spellcasting"],
+        [],[],[],[],[],[],[],[],
         ["Corona of Light"],
         [],[],[]
       ],
@@ -99,13 +99,13 @@
     },
     "Nature": {
       "features" :[ 
-        [],["Acolyte of Nature", "Heavy armor"],["Charm Animals and Plants"],
-        [],
-        [],[],
+        [],["Acolyte of Nature", "Heavy armor"],
+        ["Charm Animals and Plants"],
+        [],[],[],
         ["Dampen Elements"],
-        [],["Divine Strike"],[],[],
         [],
-        [],[],[],[],[],
+        ["Divine Strike"],
+        [],[],[],[],[],[],[],[],
         ["Master of Nature"],
         [],[],[]
       ],
@@ -119,13 +119,13 @@
     },
     "Tempest": {
       "features" :[ 
-        [],["Wrath of the Storm", "Heavy armor", "Martial weapons"],["Destructive Wrath"],
-        [],
-        [],[],
+        [],["Wrath of the Storm", "Heavy armor", "Martial weapons"],
+        ["Destructive Wrath"],
+        [],[],[],
         ["Thunderbolt Strike"],
-        [],["Divine Strike"],[],[],
         [],
-        [],[],[],[],[],
+        ["Divine Strike"],
+        [],[],[],[],[],[],[],[],
         ["Stormborn"],
         [],[],[]
       ],
@@ -139,13 +139,13 @@
     },
     "Trickery": {
       "features" :[ 
-        [],["Blessing of the Trickster"],["Invoke Duplicity"],
-        [],
-        [],[],
+        [],["Blessing of the Trickster"],
+        ["Invoke Duplicity"],
+        [],[],[],
         ["Cloak of Shadows"],
-        [],["Divine Strike"],[],[],
         [],
-        [],[],[],[],[],
+        ["Divine Strike"],
+        [],[],[],[],[],[],[],[],
         ["Improved Duplicity"],
         [],[],[]
       ],
@@ -159,13 +159,13 @@
     },
     "War": {
       "features" :[ 
-        [],["War Priest", "Heavy armor", "Martial weapons"],["Guided Strike"],
-        [],
-        [],[],
+        [],["War Priest", "Heavy armor", "Martial weapons"],
+        ["Guided Strike"],
+        [],[],[],
         ["War God's Blessing"],
-        [],["Divine Strike"],[],[],
         [],
-        [],[],[],[],[],
+        ["Divine Strike"],
+        [],[],[],[],[],[],[],[],
         ["Avatar of Battle"],
         [],[],[]
       ],

@@ -90,11 +90,13 @@ class profession:
     for w in character_dict['weapons']:
       name = w['name']
       prof = skilled_proficiency
+      ndice = '' if not 'ds' in w else w['ds']
       dice = w['d']
       attrib = att[w['a']]
       tp = w['t']
-      weapons.append('{}&{}&d{}+{}&{}\\\\'.format(name, 
+      weapons.append('{}&{}&{}d{}+{}&{}\\\\'.format(name, 
                                                   prof, 
+                                                  ndice,
                                                   dice, 
                                                   attrib, 
                                                   tp))
@@ -231,6 +233,9 @@ class rogue(profession):
   def __init__(self):
     super().__init__('rogue')
     print("Reading rogue profession")
+  def addStuff(self, character_dict):
+    super().addStuff(character_dict)
+    character_dict['weapons'].append({'name': 'Sneak Attack', 'a':0, 'd':6, 'ds':self.table['table'][character_dict['level']]['d'], 't': 'cr'})
 
 class spellcaster(profession):
   def __init__(self, name):

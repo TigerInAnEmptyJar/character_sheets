@@ -76,10 +76,10 @@ class dragonborn(race):
     super().__init__('Dragonborn')
   def addStuff(self, character_dict):
     super().addStuff(character_dict)
-    if not 'spells' in character_dict:
-      character_dict['spells'] = []
-    for s in self.table['spells']:
-      character_dict['spells'].append(s)
+    # if not 'spells' in character_dict:
+    #   character_dict['spells'] = []
+    # for s in self.table['spells']:
+    #   character_dict['spells'].append(s)
     if character_dict['level'] >= 16:
       d = '5d6'
     elif character_dict['level']>= 11:
