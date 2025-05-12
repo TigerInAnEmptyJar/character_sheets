@@ -89,19 +89,21 @@ class profession:
     weapons = []
     for w in character_dict['weapons']:
       name = w['name']
-      prof = skilled_proficiency
-      ndice = '' if not 'ds' in w else w['ds']
+      prof = att[w['a']] + skilled_proficiency
+      ndice = ' ' if not 'ds' in w else w['ds']
       dice = w['d']
       attrib = att[w['a']]
+      print("weapon {} att {} sum {}".format(name, w['a'], attrib))
       tp = w['t']
       weapons.append('{}&{}&{}d{}+{}&{}\\\\'.format(name, 
-                                                  prof, 
+                                                    prof,
                                                   ndice,
                                                   dice, 
                                                   attrib, 
                                                   tp))
     for i in range(10-len(weapons)):
       weapons.append('\\\\')
+    print(character_dict['skills'])
     return {
       'name': character_dict['name'],
       'player': character_dict['player'],
@@ -209,6 +211,7 @@ class monk(profession):
     super().addStuff(character_dict)
     character_dict['speed'] = character_dict['speed'] + self.table['table'][character_dict['level']]['mv']
     attribute = (1 if character_dict['attributes']['dexterity'] > character_dict['attributes']['strength'] else 0)
+    print("Weapon attribute {}".format(attribute))
     character_dict['weapons'].append({'name': 'Unarmed', 'a':attribute, 'd':self.table['table'][character_dict['level']]['d'], 't': 'cr'})
     for w in character_dict['weapons']:
       w['a'] = attribute

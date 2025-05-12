@@ -1,0 +1,93 @@
+{
+    "packages": [
+        "\\usepackage[a4paper,margin=1cm]{geometry}",
+        "\\usepackage{multicol}",
+        "\\usepackage{multirow}",
+        "\\usepackage{tabularx}",
+        "\\usepackage[framemethod=TikZ]{mdframed}",
+        "\\usepackage{xcolor}"
+    ],
+    "commands": [
+        "\\newcommand{\\addAttribute}[3]{#1&\\multicolumn{1}{|c|}{#2}&[\\scriptsize #3\\normalsize]\\\\ \\cline{2-2}}",
+        "\\newcommand{\\underItem}[3]{\n\\begin{minipage}{#3}\n\\vspace{.5cm}\\underline{\\hspace{#3}}\\hspace{-#3}#2\\\\\n\\tiny #1\n\\end{minipage}}"
+    ],
+    "general": [
+        "\\begin{minipage}{.8\\linewidth}\n\\underItem{Name}{$name}{6cm}",
+        "\\underItem{Player}{$player}{6cm}\\\\",
+        "\\underItem{Height}{$height}{2.5cm}",
+        "\\underItem{Weight}{$weight}{2.5cm}",
+        "\\underItem{Age}{$age}{2.5cm}",
+        "\\underItem{Size Modifier}{$sizemodifier}{2.5cm}\\\\",
+        "\\underItem{Profession}{$profession}{6cm}",
+        "\\underItem{Race}{$race}{5cm}\\\\",
+        "\\end{minipage}"
+    ],
+    "appearance": {
+        "begin": "\\begin{tabularx}{\\linewidth}{cXl}",
+        "appear": "$pt&$name&\\textbf{$bonus $other}\\\\",
+        "charisma": "$pt&$name&$bonus\\\\",
+        "end": "\\end{tabularx}"
+    },    
+    "attributes": [
+        "\\begin{minipage}{.2\\linewidth}",
+        "\\begin{tabular}{lcc}",
+        "&\\scriptsize{Level}&\\scriptsize{Points}\\\\ \\cline{2-2}",
+        "\\addAttribute{ST}{$strength}{$strengthpt}",
+        "\\addAttribute{DX}{$dexterity}{$dexteritypt}",
+        "\\addAttribute{IQ}{$intelligence}{$intelligencept}",
+        "\\addAttribute{CO}{$constitution}{$constitutionpt}",
+        "\\end{tabular}",
+        "\\end{minipage}",
+        "\\begin{minipage}{.25\\linewidth}",
+        "\\begin{tabular}{lcc}",
+        "&\\scriptsize{Level}&\\scriptsize{Points}\\\\ \\cline{2-2}",
+        "\\addAttribute{HP}{$hits}{$hitspt}",
+        "\\addAttribute{Will}{$will}{$willpt}",
+        "\\addAttribute{Per}{$perception}{$perceptionpt}",
+        "\\addAttribute{FP}{$fatigue}{$fatiguept}",
+        "\\end{tabular}",
+        "\\end{minipage}"
+    ],
+    "advantages": {
+        "table-begin": "\\begin{minipage}{.5\\textwidth}\\begin{tabularx}{\\textwidth}{|Xr|}\\hline\n\\multicolumn{2}{|X|}{\\textbf{$type}}\\\\Name&Points\\\\ \\hline",
+        "line": "$name&$points\\\\ \\hline",
+        "table-end": "\\end{tabularx} \\\\ \\vspace{.5cm}\\end{minipage}",
+        "page-begin": "\\begin{minipage}{\\textwidth}",
+        "page-end": "\\end{minipage}",
+        "empty": "& \\\\ \\hline"
+    },
+    "language": {
+        "table-begin": "\\begin{tabularx}{\\textwidth}{|Xccc|} \\hline\n\\textbf{LANGUAGES}\\hspace{2cm}&Spoken&Written&Points\\\\",
+        "line": "$name&$is_spoken&$is_written&[\\scriptsize $pt \\normalsize]\\\\ \\cline{1-1}",
+        "is_learned": "\\o{}",
+        "not_leared": "o",
+        "table-end": "\\hline\n\\end{tabularx}"
+    },
+    "skill": {
+        "table-begin": "\\begin{tabularx}{\\linewidth}{|c|Xc|r|c|}\n\\hline\nCP&Skill&&&\\\\ \\hline",
+        "line": "$pt&$name&$type&$attribute_value&$value\\\\ \\hline",
+        "table-end": "\\end{tabularx}"
+    },
+    "spell": {
+        "page-begin": "\\begin{minipage}{\\linewidth}SPELLS\\end{minipage}\n\\begin{multicols}{2}\n\\begin{center}",
+        "page-end": "\\end{center}\n\\end{multicols}\n\\pagebreak",
+        "columns": 2,
+        "college-sorted": true,
+        "college-begin": "\\begin{tabularx}{\\linewidth}{|c|Xc|r|c|}\n\\hline\nCP&Spell ($college)&&&\\\\ \\hline",
+        "college-end": "\\end{tabularx} \\\\ \\vspace{.5cm}",
+        "table-begin": "\\begin{minipage}{\\linewidth}\n\\begin{tabularx}{\\linewidth}{|c|Xc|r|c|}\n\\hline\nCP&Spell&&&\\\\ \\hline",
+        "line": "$pt&$name&$type&$attribute_value&$value\\\\ \\hline",
+        "table-end": "\\end{tabularx}\n\\end{minipage} \\\\ \\vspace{.5cm}"
+    }, 
+    "psi": {
+        "page-begin": "\\begin{minipage}{\\linewidth}PSI\\end{minipage}\n\\begin{multicols}{3}\n\\columnbreak $psitable\\end{multicols}\n\\begin{multicols}{2}\n\\begin{center}",
+        "page-end": "\\end{center}\n\\end{multicols}\n\\pagebreak",
+        "columns": 2,
+        "psi-table-begin": "\\begin{tabularx}{\\linewidth}{|c|X|c|}\n\\hline\nCP&Psi&\\\\ \\hline",
+        "psi-line": "$pt&$name ($level_cost)&$value\\\\ \\hline",
+        "psi-table-end": "\\end{tabularx} \\\\ \\vspace{.5cm}",
+        "table-begin": "\\begin{tabularx}{\\linewidth}{|c|Xc|r|c|}\n\\hline\nCP&Skill ($psi_type)&&&\\\\ \\hline",
+        "line": "$pt&$name&$type&$attribute_value&$value\\\\ \\hline",
+        "table-end": "\\end{tabularx} \\\\ \\vspace{.5cm}"
+    }
+}

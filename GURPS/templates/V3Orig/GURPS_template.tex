@@ -1,0 +1,181 @@
+\documentclass[11pt,a4paper,notitlepage]{article}
+
+\usepackage[a4paper,margin=1cm]{geometry}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage[framemethod=TikZ]{mdframed}
+\usepackage{xcolor}
+
+$commands
+
+\begin{document}
+%
+$general
+%
+\begin{minipage}{.2\linewidth}
+%%%%%% POINTS %%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{tabular}{lc}
+\footnotesize POINTS&\\
+Total&$totalpoints\\ \cline{2-2}
+Unspent&$unspentpoints\\ \cline{2-2}
+\end{tabular}
+\end{minipage}
+\vspace{.5cm}
+\linebreak
+%
+$attributes
+%
+\begin{minipage}{.55\linewidth}
+$languages
+\end{minipage}
+\vspace{.5cm}
+\linebreak
+%
+%%%%%%% MOVE, LIFT and ENCUMBRANCE %%%%%%%%%%%%%
+\begin{minipage}{.455\textwidth}
+\hspace{.22cm}\small BASIC LIFT \tiny (ST x ST)/5 \small \underItem{}{$basiclift}{1cm} \\
+\begin{tabularx}{\textwidth}{lXclXc}
+DAMAGE Thr& \multicolumn{2}{c}{$damagethrust} &Sw &\multicolumn{2}{c}{$damageswing}\\ \cline{2-3}\cline{5-6}
+BASIC SPEED& $basicspeed& [\scriptsize $basicspeedpt\small]& BASIC MOVE &$basicmove& [\scriptsize $basicmovept\small]\\ \cline{2-2}\cline{5-5}
+\end{tabularx}
+\end{minipage}
+\begin{minipage}{.55\textwidth}
+  \begin{mdframed}
+    \textbf{REACTION MODIFIERS}\\
+      $reaction
+  \end{mdframed}
+\end{minipage}
+\vspace{.5cm}
+\linebreak
+\begin{minipage}{.6\textwidth}
+\begin{tabularx}{\textwidth}{|Xcrp{\dimexpr.05\textwidth}lp{\dimexpr.05\textwidth}lp{\dimexpr.05\textwidth}|} \hline
+\multicolumn{4}{|X}{\textbf{Encumbrance}}& \multicolumn{2}{c}{\textbf{Move}}& \multicolumn{2}{c|}{\textbf{Dodge}}\\
+None (0)&=&BL&$bl0&BMx1&$mv0&Dodge&$dodge0\\ \cline{4-4}\cline{6-6}\cline{8-8}
+Light (1)&=&2xBL&$bl1&BMx0.8&$mv1&Dodge-1&$dodge1\\ \cline{4-4}\cline{6-6}\cline{8-8}
+Medium (2)&=&3xBL&$bl2&BMx0.6&$mv2&Dodge-2&$dodge2\\ \cline{4-4}\cline{6-6}\cline{8-8}
+Heavy (3)&=&6xBL&$bl3&BMx0.4&$mv3&Dodge-3&$dodge3\\ \cline{4-4}\cline{6-6}\cline{8-8}
+X-Heavy (4)&=&10xBL&$bl4&BMx0.2&$mv4&Dodge-4&$dodge4\\ \cline{4-4}\cline{6-6}\cline{8-8}
+\hline
+\end{tabularx}
+\end{minipage}
+%
+\begin{minipage}{.4\textwidth}
+%%%%%%% DEFENSE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{minipage}{.32\textwidth}
+  \begin{mdframed}
+    \begin{minipage}[t][2.5cm][t]{\textwidth}
+      \textbf{PARRY}
+    \begin{center}
+      $parrying
+    \end{center}
+  \end{minipage}
+\end{mdframed}
+\end{minipage}
+\begin{minipage}{.32\textwidth}
+\begin{mdframed}
+  \begin{minipage}[t][2.5cm][t]{\textwidth}
+    \textbf{BLOCK}
+    \begin{center}
+      
+    \end{center}
+  \end{minipage}
+\end{mdframed}
+\end{minipage}
+\begin{minipage}{.32\textwidth}
+  \begin{mdframed}
+    \begin{minipage}[t][2.5cm][t]{\textwidth}
+      \textbf{DR}
+    \begin{center}
+      $damageresistance
+    \end{center}
+  \end{minipage}
+\end{mdframed}
+\end{minipage}
+\end{minipage}
+\vspace{.5cm}
+\linebreak
+%
+$advantages
+%%%%%%%% ADVANTAGES & DISADVANTAGES %%%%%%%%%%%%
+\pagebreak
+% 
+%%%%%% SKILLS
+\begin{multicols}{2}
+  \begin{center}
+    $skills
+  \end{center}
+\end{multicols}
+\pagebreak
+%%%%%% SPELLS
+$spells
+%%%%%% PSIONICS
+$psionics
+\pagebreak
+%%%%%% WEAPONS & POSSESSIONS
+\hspace{-.7cm}
+\begin{tabularx}{\textwidth}{|X|c|c|c|c|r|r|} \hline
+\multicolumn{7}{|l|}{\textbf{MELEE WEAPONS}} \\ 
+Weapon&Damage&Reach&Attack&Parry&Cost&Weight\\ \hline
+$melee \\ \hline
+\end{tabularx}
+\vspace{.1cm}
+\linebreak
+\begin{tabularx}{\textwidth}{|X|c|c|c|c|c|c|c|r|r|} \hline
+  \multicolumn{10}{|l|}{\textbf{RANGED WEAPONS}} \\ 
+  Weapon&Damage&Attack&Acc&Range&Shots&St&Bulk&Cost&Weight\\ \hline
+  $ranged \\ \hline
+\end{tabularx}
+\vspace{.1cm}
+\linebreak
+\begin{minipage}{.21\textwidth}
+  \textbf{Range Table}\\
+  \begin{tabularx}{\textwidth}{|X|c|} \hline
+    Dist.& Mod. \\ \hline
+    $\leq$2 yards&0\\ \hline
+    3 yards&-1\\ \hline
+    5 yards&-2\\ \hline
+    7 yards&-3\\ \hline
+    10 yards&-4\\ \hline
+    15 yards&-5\\ \hline
+    20 yards&-6\\ \hline
+    30 yards&-7\\ \hline
+    50 yards&-8\\ \hline
+    70 yards&-9\\ \hline
+    100 yards&-10\\ \hline
+    150 yards&-11\\ \hline
+    200 yards&-12\\ \hline
+    300 yards&-13\\ \hline
+    500 yards&-14\\ \hline
+    700 yards&-15\\ \hline
+  \end{tabularx}
+  \vspace{.1cm}
+  \linebreak  
+  \textbf{Hit Location}\\
+  \begin{tabularx}{\textwidth}{|c|X|} \hline
+    Mod.& Location \\ \hline
+    0&Torso\\ \hline
+    -2&Arm/Leg\\ \hline
+    -3&Vitals*/Groin\\ \hline
+    -4&Hand/Foot\\ \hline
+    -5&Face/Neck\\ \hline
+    -7&Skull\\ \hline
+    -9&Eye*\\ \hline
+  \end{tabularx}
+  * Impaling or piercing attacks only
+\end{minipage}
+\begin{minipage}{.78\textwidth}
+  \begin{tabularx}{\linewidth}{|X|c|l|c|c|}\hline
+    \multicolumn{5}{|l|}{\textbf{ARMOR}} \\ 
+    Item&DR&Location&Cost&Weight \\ \hline
+    $armor \\ \hline
+  \end{tabularx}
+  \vspace{.1cm}
+  \linebreak  
+  \begin{tabularx}{\linewidth}{|X|c|c|}\hline
+    \multicolumn{3}{|l|}{\textbf{POSSESSIONS}} \\ 
+    Item&Cost&Weight \\ \hline
+    $inventory \\ \hline
+  \end{tabularx}
+\end{minipage}
+\end{document}

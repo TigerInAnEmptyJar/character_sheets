@@ -33,7 +33,7 @@ class race:
         character_dict['attributes'][a] = character_dict['attributes'][a] + self.table['attributes'][a]
     if 'proficiencies' in self.table:
       for a in range(len(character_dict['skills'])):
-        character_dict['skills'][a] = (1 if character_dict['skills'][a] + self.table['proficiencies'][a] > 0 else 0)
+        character_dict['skills'][a] = (character_dict['skills'][a] if character_dict['skills'][a] + self.table['proficiencies'][a] > 0 else 0)
     if not 'armors' in character_dict:
       character_dict['armors'] = []
     if 'armors' in self.table:

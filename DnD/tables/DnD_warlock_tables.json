@@ -1,0 +1,131 @@
+{
+    "table": [[],
+      {"pr": 2, "cantrips": 2, "ks": 2 , "slots": 1, "level":1, "invoc": 0, "asi": false, "s": true,  "feat": ["Pcat Magic"]},
+      {"pr": 2, "cantrips": 2, "ks": 3 , "slots": 2, "level":1, "invoc": 2, "asi": false, "s": false, "feat": ["Eldrich Invocations"]},
+      {"pr": 2, "cantrips": 2, "ks": 4 , "slots": 2, "level":2, "invoc": 2, "asi": false, "s": false, "feat": ["Pact Boon"]},
+      {"pr": 2, "cantrips": 3, "ks": 5 , "slots": 2, "level":2, "invoc": 2, "asi": true,  "s": false, "feat": []},
+      {"pr": 3, "cantrips": 3, "ks": 6 , "slots": 2, "level":3, "invoc": 3, "asi": false, "s": false, "feat": []},
+      {"pr": 3, "cantrips": 3, "ks": 7 , "slots": 2, "level":3, "invoc": 3, "asi": false, "s": true,  "feat": []},
+      {"pr": 3, "cantrips": 3, "ks": 8 , "slots": 2, "level":4, "invoc": 4, "asi": false, "s": false, "feat": []},
+      {"pr": 3, "cantrips": 3, "ks": 9 , "slots": 2, "level":4, "invoc": 4, "asi": true,  "s": false, "feat": []},
+      {"pr": 4, "cantrips": 3, "ks": 10, "slots": 2, "level":5, "invoc": 5, "asi": false, "s": false, "feat": []},
+      {"pr": 4, "cantrips": 4, "ks": 10, "slots": 2, "level":5, "invoc": 5, "asi": false, "s": true,  "feat": []},
+      {"pr": 4, "cantrips": 4, "ks": 11, "slots": 3, "level":5, "invoc": 5, "asi": false, "s": false, "feat": ["Mystic Arcanum (6th level)"]},
+      {"pr": 4, "cantrips": 4, "ks": 11, "slots": 3, "level":5, "invoc": 6, "asi": true,  "s": false, "feat": []},
+      {"pr": 5, "cantrips": 4, "ks": 12, "slots": 3, "level":5, "invoc": 6, "asi": false, "s": false, "feat": ["Mystic Arcanum (7th level)"]},
+      {"pr": 5, "cantrips": 4, "ks": 12, "slots": 3, "level":5, "invoc": 6, "asi": false, "s": true,  "feat": []},
+      {"pr": 5, "cantrips": 4, "ks": 13, "slots": 3, "level":5, "invoc": 6, "asi": false, "s": false, "feat": ["Mystic Arcanum (8th level)"]},
+      {"pr": 5, "cantrips": 4, "ks": 13, "slots": 3, "level":5, "invoc": 6, "asi": true,  "s": false, "feat": []},
+      {"pr": 6, "cantrips": 4, "ks": 14, "slots": 4, "level":5, "invoc": 6, "asi": false, "s": false, "feat": ["Song of Rest (d12)"]},
+      {"pr": 6, "cantrips": 4, "ks": 14, "slots": 4, "level":5, "invoc": 7, "asi": false, "s": false, "feat": ["Magical Secrets"]},
+      {"pr": 6, "cantrips": 4, "ks": 15, "slots": 4, "level":5, "invoc": 7, "asi": true,  "s": false, "feat": []},
+      {"pr": 6, "cantrips": 4, "ks": 15, "slots": 4, "level":5, "invoc": 7, "asi": false, "s": false, "feat": ["Superior Inspiration"]}
+    ],
+    "hitDice": 8,
+    "ht_at_start": 8,
+    "att": "CO",
+    "spell_attribute": 5,
+    "features": ["Ritual casting"],
+    "armors": ["Light Armors"],
+    "proficiencies": ["Simple Weapons", "Hand Crossbows", "Longswords", "Rapiers", "Shortswords"],
+    "skills": [
+      0, 0, 
+      1, 0, 0, 0,
+      0,
+      0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0,
+      1, 0, 0, 0, 0
+    ],
+    "school-name": "College",
+    "schools": {
+      "College of Lore": {
+        "features": [
+          [],[],[],
+          ["Bonus Proficiencies", "Cutting Words"],
+          [],[],
+          ["Additional Magical Secrets"],
+          [],[],[],[],[],[],[],
+          ["Peerless Skill"],
+          [],[],[],[],[],[]
+        ]
+      },
+      "College of Valor": {
+        "features" :[ 
+          [],[],[],
+          ["Bonus Proficiencies", "Combat Inspiration"],
+          [],[],
+          ["Extra Attack"],
+          [],[],[],[],[],[],[],
+          ["Battle Magic"],
+          [],[],[],[],[],[]
+        ]
+      },
+      "College of Creation": {
+        "features" :[ 
+          [],[],[],
+          ["Mote of Potential", "Performance of Creation"],
+          [],[],
+          ["Animating Performance"],
+          [],[],[],[],[],[],[],
+          ["Creative Crescendo"],
+          [],[],[],[],[],[]
+        ]
+      },
+      "College of Eloquence": {
+        "features" :[ 
+          [],[],[],
+          ["Silver Tongue", "Unsettling Words"],
+          [],[],
+          ["Unfailing Inspiration", "Universal Speech"],
+          [],[],[],[],[],[],[],
+          ["Infectious Inspiration"],
+          [],[],[],[],[],[]
+        ]
+      },
+      "College of Glamour": {
+        "features" :[ 
+          [],[],[],
+          ["Mantle of Inspiration", "Enthralling Performance"],
+          [],[],
+          ["Mantle of Majesty"],
+          [],[],[],[],[],[],[],
+          ["Unbreakable Majesty"],
+          [],[],[],[],[],[]
+        ]
+      },
+      "College of Spirits": {
+        "features" :[ 
+          [],[],[],
+          ["Guiding Whispers", "Spiritual Focus", "Tales from Beyond"],
+          [],[],
+          ["Spirit Session"],
+          [],[],[],[],[],[],[],
+          ["Mystical Connection"],
+          [],[],[],[],[],[]
+        ]
+      },
+      "College of Swords": {
+        "features" :[ 
+          [],[],[],
+          ["Bonus Proficiencies", "Fighting Style", "Blade Flourish"],
+          [],[],
+          ["Extra Attack"],
+          [],[],[],[],[],[],[],
+          ["Master's Flourish"],
+          [],[],[],[],[],[]
+        ]
+      },
+      "College of Whispers": {
+        "features" :[ 
+          [],[],[],
+          ["Psychic Blades", "Words of Terror"],
+          [],[],
+          ["Mantle of Whispers"],
+          [],[],[],[],[],[],[],
+          ["Shadow Lore"],
+          [],[],[],[],[],[]
+        ]
+      }
+    }
+  }
+  

@@ -28,9 +28,10 @@
   "school-name": "Monasteric tradition",
   "schools": {
     "Way of Mercy": {
+      "proficiencies": ["Insight", "Medicine"],
       "features": [
         [],[],[],
-        ["Insight", "Medicine", "Herbalism Kit", "Hands of Healing", "Hands of Harm"],
+        ["Herbalism Kit", "Hands of Healing", "Hands of Harm"],
         [],[],
         ["Physicians Touch"],
         [],[],[],[],

@@ -7,9 +7,14 @@
         {"name":"Short Bow"            , "skill": "Bow"                       , "cost":50, "weight": [1.5, 0.1], "range": [10,15], "acc": 1, "damage": {"value": [0, 0]}                  , "type": "imp" },
         {"name":"Stone Missile"        , "skill": "Innate Attack (Projectile)", "cost":0 , "weight": null      , "range": [40,80], "acc": 2, "damage": {"fixed": true, "value": "1d+1/Fp"}, "type": "cr"},
         {"name":"Fireball"             , "skill": "Innate Attack (Projectile)", "cost":0 , "weight": null      , "range": [25,50], "acc": 1, "damage": {"fixed": true, "value": "1d/Fp"},   "type": "fire"},
-        {"name":"Explosive Fireball"   , "skill": "Innate Attack (Projectile)", "cost":0 , "weight": null      , "range": [25,50], "acc": 1, "damage": {"fixed": true, "value": "1d/2Fp"},  "type": "fire"}
+        {"name":"Explosive Fireball"   , "skill": "Innate Attack (Projectile)", "cost":0 , "weight": null      , "range": [25,50], "acc": 1, "damage": {"fixed": true, "value": "1d/2Fp"},  "type": "fire"},
+        {"name":"Ice Sphere"           , "skill": "Innate Attack (Projectile)", "cost":0 , "weight": null      , "range": [40,80], "acc": 2, "damage": {"fixed": true, "value": "1d/Fp"},   "type": "cr"},
+        {"name":"Lightning"            , "skill": "Throwing",                   "cost":0 , "weight": null      , "range": [50,100], "acc": 3, "damage": {"fixed": true, "value": "1d-1/Fp"},"type": "electric"},
+        {"name": "Telekinesis"         , "skill": "Telekinesis",                "cost": 0, "weight": null      , "range": [200,2500], "acc": 2, "damage": {"fixed": true, "value": "3W"},   "type": "cr"}
     ],
     "armor": [
-        {"name": "Mage Robe", "loc": "all w/o face", "dr": 2, "weight": 18, "cost": 750}
+        {"name": "Mage Robe",   "loc": "all w/o face", "dr": 2, "weight": 18, "cost": 750},
+        {"name": "Mage Robe (Heavy cloth), magic",   "loc": "all w/o face", "dr": 3, "weight": 18, "cost": 1250},
+        {"name": "Chain-dress", "loc": "all w/o face", "dr": 4, "weight": 18, "cost": null}
     ]
 }

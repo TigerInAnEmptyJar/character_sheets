@@ -1,0 +1,131 @@
+{
+    "table": [[],
+      {"pr": 2, "cantrips": 2, "1": 2, "2": 0, "3":0, "4":0, "5":0, "6":0,"7":0, "8":0,"9":0, "asi": false, "s": false, "feat": ["Spellcasting", "Bardic Inspiration (d6)"]},
+      {"pr": 2, "cantrips": 2, "1": 3, "2": 0, "3":0, "4":0, "5":0, "6":0,"7":0, "8":0,"9":0, "asi": false, "s": false, "feat": ["Jack of All Trades", "Song of Rest (d6)"]},
+      {"pr": 2, "cantrips": 2, "1": 4, "2": 2, "3":0, "4":0, "5":0, "6":0,"7":0, "8":0,"9":0, "asi": false, "s": true,  "feat": ["Expertise"]},
+      {"pr": 2, "cantrips": 3, "1": 4, "2": 3, "3":0, "4":0, "5":0, "6":0,"7":0, "8":0,"9":0, "asi": true,  "s": false, "feat": []},
+      {"pr": 3, "cantrips": 3, "1": 4, "2": 3, "3":2, "4":0, "5":0, "6":0,"7":0, "8":0,"9":0, "asi": false, "s": false, "feat": ["Bardic Inspiration (d8)", "Font of Inspiratioin"]},
+      {"pr": 3, "cantrips": 3, "1": 4, "2": 3, "3":3, "4":0, "5":0, "6":0,"7":0, "8":0,"9":0, "asi": false, "s": true,  "feat": ["Countercharm"]},
+      {"pr": 3, "cantrips": 3, "1": 4, "2": 3, "3":3, "4":1, "5":0, "6":0,"7":0, "8":0,"9":0, "asi": false, "s": false, "feat": []},
+      {"pr": 3, "cantrips": 3, "1": 4, "2": 3, "3":3, "4":2, "5":0, "6":0,"7":0, "8":0,"9":0, "asi": true,  "s": true,  "feat": []},
+      {"pr": 4, "cantrips": 3, "1": 4, "2": 3, "3":3, "4":3, "5":1, "6":0,"7":0, "8":0,"9":0, "asi": false, "s": false, "feat": ["Song of Rest (d8)"]},
+      {"pr": 4, "cantrips": 4, "1": 4, "2": 3, "3":3, "4":3, "5":2, "6":0,"7":0, "8":0,"9":0, "asi": false, "s": false, "feat": ["Magical Secrets"]},
+      {"pr": 4, "cantrips": 4, "1": 4, "2": 3, "3":3, "4":3, "5":2, "6":1,"7":0, "8":0,"9":0, "asi": false, "s": true,  "feat": ["Bardic Inspiration (d10)", "Expertise"]},
+      {"pr": 4, "cantrips": 4, "1": 4, "2": 3, "3":3, "4":3, "5":2, "6":1,"7":0, "8":0,"9":0, "asi": true,  "s": false, "feat": []},
+      {"pr": 5, "cantrips": 4, "1": 4, "2": 3, "3":3, "4":3, "5":2, "6":1,"7":1, "8":0,"9":0, "asi": false, "s": false, "feat": ["Song of Rest (d10)"]},
+      {"pr": 5, "cantrips": 4, "1": 4, "2": 3, "3":3, "4":3, "5":2, "6":1,"7":1, "8":0,"9":0, "asi": false, "s": false, "feat": ["Magical Secrets"]},
+      {"pr": 5, "cantrips": 4, "1": 4, "2": 3, "3":3, "4":3, "5":2, "6":1,"7":1, "8":1,"9":0, "asi": false, "s": false, "feat": ["Bardic Inspiration (d12)"]},
+      {"pr": 5, "cantrips": 4, "1": 4, "2": 3, "3":3, "4":3, "5":2, "6":1,"7":1, "8":1,"9":0, "asi": true,  "s": false, "feat": []},
+      {"pr": 6, "cantrips": 4, "1": 4, "2": 3, "3":3, "4":3, "5":2, "6":1,"7":1, "8":1,"9":1, "asi": false, "s": true,  "feat": ["Song of Rest (d12)"]},
+      {"pr": 6, "cantrips": 4, "1": 4, "2": 3, "3":3, "4":3, "5":3, "6":1,"7":1, "8":1,"9":1, "asi": false, "s": false, "feat": ["Magical Secrets"]},
+      {"pr": 6, "cantrips": 4, "1": 4, "2": 3, "3":3, "4":3, "5":3, "6":2,"7":1, "8":1,"9":1, "asi": true,  "s": false, "feat": []},
+      {"pr": 6, "cantrips": 4, "1": 4, "2": 3, "3":3, "4":3, "5":3, "6":2,"7":2, "8":1,"9":1, "asi": false, "s": false, "feat": ["Superior Inspiration"]}
+    ],
+    "hitDice": 8,
+    "ht_at_start": 8,
+    "att": "CO",
+    "spell_attribute": 5,
+    "features": ["Ritual casting"],
+    "armors": ["Light Armors"],
+    "proficiencies": ["Simple Weapons", "Hand Crossbows", "Longswords", "Rapiers", "Shortswords"],
+    "skills": [
+      0, 0, 
+      1, 0, 0, 0,
+      0,
+      0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0,
+      1, 0, 0, 0, 0
+    ],
+    "school-name": "College",
+    "schools": {
+      "College of Lore": {
+        "features": [
+          [],[],[],
+          ["Bonus Proficiencies", "Cutting Words"],
+          [],[],
+          ["Additional Magical Secrets"],
+          [],[],[],[],[],[],[],
+          ["Peerless Skill"],
+          [],[],[],[],[],[]
+        ]
+      },
+      "College of Valor": {
+        "features" :[ 
+          [],[],[],
+          ["Bonus Proficiencies", "Combat Inspiration"],
+          [],[],
+          ["Extra Attack"],
+          [],[],[],[],[],[],[],
+          ["Battle Magic"],
+          [],[],[],[],[],[]
+        ]
+      },
+      "College of Creation": {
+        "features" :[ 
+          [],[],[],
+          ["Mote of Potential", "Performance of Creation"],
+          [],[],
+          ["Animating Performance"],
+          [],[],[],[],[],[],[],
+          ["Creative Crescendo"],
+          [],[],[],[],[],[]
+        ]
+      },
+      "College of Eloquence": {
+        "features" :[ 
+          [],[],[],
+          ["Silver Tongue", "Unsettling Words"],
+          [],[],
+          ["Unfailing Inspiration", "Universal Speech"],
+          [],[],[],[],[],[],[],
+          ["Infectious Inspiration"],
+          [],[],[],[],[],[]
+        ]
+      },
+      "College of Glamour": {
+        "features" :[ 
+          [],[],[],
+          ["Mantle of Inspiration", "Enthralling Performance"],
+          [],[],
+          ["Mantle of Majesty"],
+          [],[],[],[],[],[],[],
+          ["Unbreakable Majesty"],
+          [],[],[],[],[],[]
+        ]
+      },
+      "College of Spirits": {
+        "features" :[ 
+          [],[],[],
+          ["Guiding Whispers", "Spiritual Focus", "Tales from Beyond"],
+          [],[],
+          ["Spirit Session"],
+          [],[],[],[],[],[],[],
+          ["Mystical Connection"],
+          [],[],[],[],[],[]
+        ]
+      },
+      "College of Swords": {
+        "features" :[ 
+          [],[],[],
+          ["Bonus Proficiencies", "Fighting Style", "Blade Flourish"],
+          [],[],
+          ["Extra Attack"],
+          [],[],[],[],[],[],[],
+          ["Master's Flourish"],
+          [],[],[],[],[],[]
+        ]
+      },
+      "College of Whispers": {
+        "features" :[ 
+          [],[],[],
+          ["Psychic Blades", "Words of Terror"],
+          [],[],
+          ["Mantle of Whispers"],
+          [],[],[],[],[],[],[],
+          ["Shadow Lore"],
+          [],[],[],[],[],[]
+        ]
+      }
+    }
+  }
+  

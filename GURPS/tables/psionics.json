@@ -1,0 +1,104 @@
+{
+  "Antipsi": {
+    "points" : 3, 
+    "skills": [
+        { "name": "Neutralize" },
+        { "name": "Psi Static" }
+    ]
+  },
+  "Astral Projection": {
+    "points" : 3, 
+    "skills": [
+        { "name": "Astral Projection" },
+        { "name": "Astral Sight" }
+    ]
+  },
+  "Electrokinesis": {
+    "points" : 5, 
+    "skills": [
+        { "name": "Confuse" },
+        { "name": "Cyberpsi" },
+        { "name": "Dampen" },
+        { "name": "Energy Sense" },
+        { "name": "Energy Shield" },
+        { "name": "Lightning" },
+        { "name": "Photokinesis" },
+        { "name": "Surge" }
+    ]
+  },
+  "ESP": {
+    "points" : 3, 
+    "skills": [
+        { "name": "Clairvoyance" },
+        { "name": "Clairaudience" },
+        { "name": "Clairsentience" },
+        { "name": "Combat Sense" },
+        { "name": "Precognition" },
+        { "name": "Psychometry" },
+        { "name": "Seekersense" }
+  ]
+  },
+  "Healing": {
+    "points" : 3, 
+    "skills": [
+        { "name": "Healing" },
+        { "name": "Life Extension" },
+        { "name": "Metabolism Control" },
+        { "name": "Sense Aura" }
+    ]
+  },
+  "Psychic Vampirism": {
+    "points" : 3, 
+    "skills": [ 
+        { "name": "Drain Strength" },
+        { "name": "Drain Dexterity" },
+        { "name": "Drain Intelligence" },
+        { "name": "Drain Health" },
+        { "name": "Drain Emotion" },
+        { "name": "Steal Dreams" },
+        { "name": "Steal Energy" },
+        { "name": "Steal Power" }
+    ]
+  },
+  "Psychokinesis": {
+    "points" : 5, 
+    "skills": [
+        { "name": "Cryokinesis" },
+        { "name": "Levitation" },
+        { "name": "Pyrokinesis" },
+        { "name": "PK Shield" },
+        { "name": "Telekinesis" }
+    ]
+  },
+  "Telepathy": {
+    "points" : 5, 
+    "skills": [
+        { "name": "Aspect" },
+        { "name": "Emotion Sense" },
+        { "name": "Erase Signature" },
+        { "name": "Illusion" },
+        { "name": "Mental Blow" },
+        { "name": "Mental Stab" },
+        { "name": "Mind Shield" },
+        { "name": "Mindswitch" },
+        { "name": "Mindsword" },
+        { "name": "Mindwipe" },
+        { "name": "Psi Sense" },
+        { "name": "Signature Sniffer" },
+        { "name": "Sleep" },
+        { "name": "Suggest" },
+        { "name": "Telecontrol" },
+        { "name": "Telereceive" },
+        { "name": "Telescan" },
+        { "name": "Telesend" }
+    ]
+  },
+  "Teleportation": {
+    "points" : 5, 
+    "skills": [
+        { "name": "Autoteleport" },
+        { "name": "Combat Teleport" },
+        { "name": "Exoteleport" }
+    ]
+  }
+}

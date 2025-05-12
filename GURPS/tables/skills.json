@@ -21,5 +21,5 @@
     { "name": "Hiking",                     "difficulty": 1, "attribute": 3 },
     { "name": "Gesture",                    "difficulty": 0, "attribute": 2 },
     { "name": "Body sense",                 "difficulty": 2, "attribute": 1 },
-    { "name": "Stealth",                    "difficulty": 1, "attribute": 1, "adds": "encumbrance" }    
+    { "name": "Stealth",                    "difficulty": 1, "attribute": 1, "adds": "encumbrance" }
 ]
